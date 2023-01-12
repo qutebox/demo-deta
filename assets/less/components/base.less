@@ -1,0 +1,39 @@
+html{
+  font-size: 16px;
+  @media (min-width: @screen-sl) {
+    font-size: 18px;
+  }
+  @media (min-width: @screen-ssl) {
+    font-size: 20px;
+  }
+}
+body{
+  position: relative;
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  color: var(--color-500);
+  overflow-x: hidden;
+  overflow-y: auto;
+  &.__hide-scroll{
+    overflow-y: hidden;
+  }
+}
+
+.container{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  @media (min-width: @screen-sl) {
+    max-width: 1400px;
+  }
+  @media (min-width: @screen-ssl) {
+    max-width: 1600px;
+  }
+}
+
+v-cloak{
+  display: none !important;
+}

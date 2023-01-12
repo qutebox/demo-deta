@@ -1,0 +1,28 @@
+/**
+ * LESS variables
+ */
+// Colors variables
+@main       : #57BBC5;
+@sub        : #f15c61;
+@color      : #000000;
+
+// Screen size
+@screen-sm  : 576px;
+@screen-md  : 768px;
+@screen-lg  : 992px;
+@screen-xl  : 1200px;
+@screen-sl  : 1500px;
+@screen-ssl : 1700px;
+@screen-xs  : (@screen-sm - 1);
+
+// CSS variables
+:root{
+  --color-300: lighten(@color, 5%);
+  --color-500: @color;
+  --main-300: lighten(@main, 7%);
+  --main-500: @main;
+  --main-700: darken(@main, 7%);
+  --sub-300: lighten(@sub, 7%);
+  --sub-500: @sub;
+  --sub-700: darken(@sub, 7%);
+}
