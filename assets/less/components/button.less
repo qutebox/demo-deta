@@ -5,11 +5,15 @@
   font-size: 1em;
   color: #fff;
   text-decoration: none;
-  padding: 1rem 2.5rem;
+  padding: .75rem 2rem;
   border-radius: 3rem;
   text-align: center;
   cursor: pointer;
   transition: background .3s;
+  @media (min-width: @screen-lg) {
+    padding: 1rem 2.5rem;
+  }
+
   &:hover{
     color: #fff;
     background-color: var(--main-300);

@@ -7,41 +7,6 @@
       </div>
 
       <div class="row align-items-center g-5 position-relative">
-        <!-- images -->
-        <div class="col-lg-6">
-          <div class="img-wrap">
-            <v-inview class="img-wrap-items" add-class="__in">
-              <img
-                src="/images/home/pic-4.png"
-                alt="Detalytics solution"
-                width="453"
-                height="302"
-                loading="lazy"
-                class="item item-1"
-                :style="{ '--delay': '.5s' }"
-              >
-              <img
-                src="/images/home/pic-5.png"
-                alt="Detalytics solution"
-                width="536"
-                height="357"
-                loading="lazy"
-                class="item item-2"
-                :style="{ '--delay': '.8s' }"
-              >
-              <img
-                src="/images/home/pic-6.png"
-                alt="Detalytics solution"
-                width="422"
-                height="237"
-                loading="lazy"
-                class="item item-3"
-                :style="{ '--delay': '1s' }"
-              >
-            </v-inview>
-          </div>
-        </div>
-
         <!-- content -->
         <div class="col-lg-6">
           <div class="ps-xl-5">
@@ -69,6 +34,58 @@
             </div>
           </div>
         </div>
+
+        <!-- images -->
+        <div class="col-lg-6 order-lg-first">
+          <v-inview
+            class="img-wrap"
+            add-class="__in"
+          >
+            <img
+              src="/images/home/pic-4.png"
+              alt="Detalytics solution"
+              width="453"
+              height="302"
+              loading="lazy"
+              class="img"
+              :style="{
+                '--delay': '.5s',
+                width: '66%',
+                top: '5%',
+                right: '6%',
+              }"
+            >
+            <img
+              src="/images/home/pic-5.png"
+              alt="Detalytics solution"
+              width="536"
+              height="357"
+              loading="lazy"
+              class="img"
+              :style="{
+                '--delay': '.8s',
+                width: '78%',
+                top: '30%',
+                left: '3%',
+              }"
+            >
+            <img
+              src="/images/home/pic-6.png"
+              alt="Detalytics solution"
+              width="422"
+              height="237"
+              loading="lazy"
+              class="img"
+              :style="{
+                '--delay': '1s',
+                width: '63%',
+                right: '0',
+                bottom: '0',
+              }"
+            >
+          </v-inview>
+        </div>
+
       </div>
 
     </div>
@@ -107,41 +124,22 @@
 .img-wrap{
   position: relative;
   user-select: none;
-  &-items{
-    position: relative;
-    padding-bottom: 90%;
-    .item{
-      position: absolute;
-      height: auto;
-      opacity: 0;
-      transform: translateY(1.5rem);
-      transition-property: transform, opacity;
-      transition-duration: .3s;
-      transition-timing-function: ease-out;
-    }
-    .item-1{
-      width: 66%;
-      top: 5%;
-      right: 6%;
-    }
-    .item-2{
-      width: 78%;
-      top: 30%;
-      left: 3%;
-    }
-    .item-3{
-      width: 63%;
-      right: 0;
-      bottom: 0;
-    }
-
-    &.__in{
-      .item{
-        opacity: 1;
-        transform: translate(0);
-        transition-duration: 1s;
-        transition-delay: var(--delay);
-      }
+  padding-bottom: 90%;
+  .img{
+    position: absolute;
+    height: auto;
+    opacity: 0;
+    transform: translateY(1.5rem);
+    transition-property: transform, opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+  }
+  &.__in{
+    .img{
+      opacity: 1;
+      transform: translate(0);
+      transition-duration: 1.3s, .5s;
+      transition-delay: var(--delay);
     }
   }
 }
@@ -159,7 +157,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -90%);
+  transform: translate(-50%, 0%);
   @media (min-width: @screen-lg) {
     transform: translate(-50%, -50%);
   }

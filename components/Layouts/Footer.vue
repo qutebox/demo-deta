@@ -19,9 +19,56 @@
     <div class="footer-btm">
       <div class="container">
         <div class="row g-3 g-lg-5">
-          <!-- column-1 -->
-          <div class="col-lg-6">
-            <div class="text-center text-lg-left">
+          <!-- column#links -->
+          <div class="col-6 col-lg-3 order-lg-last">
+            <div class="mb-4 pb-2">
+              <NuxtLink to="/" class="link">
+                Why Detalytics?
+              </NuxtLink>
+            </div>
+            <div class="mb-4 pb-2">
+              <NuxtLink to="/" class="link">
+                Pricing
+              </NuxtLink>
+            </div>
+            <div class="mb-4 pb-2">
+              <NuxtLink to="/" class="link">
+                About
+              </NuxtLink>
+            </div>
+          </div>
+
+          <!-- column#text -->
+          <div class="col-6 col-lg-3">
+            <div class="label">
+              For Businesses
+            </div>
+            <div class="txt">
+              <p class="mb-1">Better insights, better performance in...</p>
+              <ul class="mb-1 ps-3">
+                <li>Insurance brokers</li>
+                <li>Care Providers</li>
+                <li>Employers</li>
+                <li>Safety-critical industries</li>
+              </ul>
+            </div>
+
+            <div class="mt-3 label">
+              For Individuals
+            </div>
+            <div class="txt">
+              <p class="mb-1">Achieve your best in...</p>
+              <ul class="mb-1 ps-3">
+                <li>Work performance</li>
+                <li>Work safety</li>
+                <li>Health & wellbeing</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- column#contact -->
+          <div class="col-lg-6 order-lg-first">
+            <div class="mt-4">
               <NuxtLink to="/">
                 <img
                   srcset="@/assets/images/logo.png, @/assets/images/logo@2x.png 2x"
@@ -57,52 +104,6 @@
             </div>
           </div>
 
-          <!-- column-2 -->
-          <div class="col-6 col-lg-3">
-            <div class="label">
-              For Businesses
-            </div>
-            <div class="txt">
-              <p class="mb-1">Better insights, better performance in...</p>
-              <ul class="mb-1 ps-3">
-                <li>Insurance brokers</li>
-                <li>Care Providers</li>
-                <li>Employers</li>
-                <li>Safety-critical industries</li>
-              </ul>
-            </div>
-
-            <div class="mt-3 label">
-              For Individuals
-            </div>
-            <div class="txt">
-              <p class="mb-1">Achieve your best in...</p>
-              <ul class="mb-1 ps-3">
-                <li>Work performance</li>
-                <li>Work safety</li>
-                <li>Health & wellbeing</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- column-3 -->
-          <div class="col-6 col-lg-3">
-            <div class="mb-4 pb-2">
-              <NuxtLink to="/" class="link">
-                Why Detalytics?
-              </NuxtLink>
-            </div>
-            <div class="mb-4 pb-2">
-              <NuxtLink to="/" class="link">
-                Pricing
-              </NuxtLink>
-            </div>
-            <div class="mb-4 pb-2">
-              <NuxtLink to="/" class="link">
-                About
-              </NuxtLink>
-            </div>
-          </div>
         </div>
       </div>
     </div>

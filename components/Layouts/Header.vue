@@ -1,13 +1,16 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 
+// eslint-disable-next-line no-undef
+const route = useRoute();
 const $nav = ref(null);
 let timer = null;
 
+// events
 const onToggleMNav = () => {
   const isOpen = !$nav.value.classList.contains('__active');
-  clearTimeout(timer);
 
+  clearTimeout(timer);
   if (isOpen) {
     $nav.value.classList.add('__active');
     timer = setTimeout(() => {
@@ -20,6 +23,18 @@ const onToggleMNav = () => {
     }, 300); // follow css duration
   }
 };
+
+const onCloseMNav = () => {
+  if ($nav.value.classList.contains('__active')) {
+    onToggleMNav();
+  }
+};
+
+// watcher
+watch(route, () => {
+  // force close
+  onCloseMNav('close');
+});
 </script>
 
 <template>
@@ -50,7 +65,7 @@ const onToggleMNav = () => {
           </li>
 
           <li>
-            <NuxtLink to="/">
+            <NuxtLink to="/how-it-works">
               How it works
             </NuxtLink>
           </li>
@@ -60,7 +75,7 @@ const onToggleMNav = () => {
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/">
+            <NuxtLink to="/individuals/work-performance">
               For Individuals <VIcon name="caret" />
             </NuxtLink>
           </li>

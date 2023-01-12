@@ -1,5 +1,8 @@
 html{
-  font-size: 16px;
+  font-size: 14px;
+  @media (min-width: @screen-lg) {
+    font-size: 16px;
+  }
   @media (min-width: @screen-sl) {
     font-size: 18px;
   }
@@ -24,8 +27,12 @@ body{
 }
 
 .container{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  @media (min-width: @screen-md) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
   @media (min-width: @screen-sl) {
     max-width: 1400px;
   }

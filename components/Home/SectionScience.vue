@@ -7,32 +7,6 @@
       </div>
 
       <div class="row align-items-center g-5 position-relative">
-        <!-- images -->
-        <div class="col-lg-6">
-          <div class="img-wrap">
-            <v-inview class="img-wrap-items" add-class="__in">
-              <img
-                src="/images/home/app-2a.png"
-                alt="Detalytics App"
-                width="482"
-                height="887"
-                loading="lazy"
-                class="item item-1"
-                :style="{ '--delay': '.4s' }"
-              >
-              <img
-                src="/images/home/app-2b.png"
-                alt="Detalytics App"
-                width="458"
-                height="372"
-                loading="lazy"
-                class="item item-2"
-                :style="{ '--delay': '.8s' }"
-              >
-            </v-inview>
-          </div>
-        </div>
-
         <!-- content -->
         <div class="col-lg-6">
           <div class="ps-xl-5">
@@ -45,26 +19,58 @@
             <div class="content">
               <p>Backed by science, gain full clarity on your lifestyle patterns  and rest assured that you are always prepared to be at your best, at everyday and any moment. Designed by leading international experts with over 20 years of experience in the field of circadian science and performance readiness management. With (app), understand how your body and mind works. Gain key insights to your health and understand how to optimise your lifestyle effortlessly.</p>
               <div class="point">
-                <div class="me-3">
-                  <svg viewBox="0 0 42 42" width="42" height="42">
-                    <circle cx="21" cy="21" r="21" fill="currentColor" />
-                    <path fill="#fff" d="M29.3 13.5h-1.7v-.8c0-.4-.2-.9-.5-1.2-.2-.3-.7-.5-1.1-.5H16c-.4 0-.9.2-1.2.5-.3.3-.5.7-.5 1.2v.8h-1.7c-.4 0-.9.2-1.2.5-.3.3-.5.7-.5 1.2v2.5c0 .9.4 1.7 1 2.3.6.6 1.5 1 2.4 1h.3c.3 1.3 1.1 2.4 2 3.3 1 .9 2.2 1.4 3.5 1.6v3.4H16V31h10v-1.7h-4.2v-3.4c1.3-.2 2.6-.7 3.6-1.6 1-.9 1.7-2 2-3.3h.2c.9 0 1.7-.4 2.4-1 .6-.6 1-1.5 1-2.3v-2.5c0-.4-.2-.9-.5-1.2-.3-.3-.7-.5-1.2-.5zm-15 5.8c-.4 0-.9-.2-1.2-.5-.3-.3-.5-.7-.5-1.2v-2.5h1.7v4.2zm11.7 0c0 .7-.1 1.3-.4 1.9-.3.6-.6 1.2-1.1 1.6-.5.5-1.1.8-1.7 1.1-.6.2-1.3.4-2 .3-1.3-.1-2.6-.7-3.5-1.6-.9-1-1.4-2.3-1.4-3.6v-6.4h10v6.7zm3.3-1.6c0 .4-.2.9-.5 1.2-.3.3-.7.5-1.2.5v-4.1h1.7v2.4z" />
-                  </svg>
+                <div class="point-ic me-3">
+                  <v-icon name="person" size="25"></v-icon>
                 </div>
                 <span><b>Derived from your unique lifestyle behaviours</b> - Personalized action plan of derived from your lifestyle behaviors, circadian rhythms and metabolic statuses.</span>
               </div>
               <div class="point">
-                <div class="me-3">
-                  <svg viewBox="0 0 42 42" width="42" height="42">
-                    <circle cx="21" cy="21" r="21" fill="currentColor" />
-                    <path fill="#fff" d="M29.3 13.5h-1.7v-.8c0-.4-.2-.9-.5-1.2-.2-.3-.7-.5-1.1-.5H16c-.4 0-.9.2-1.2.5-.3.3-.5.7-.5 1.2v.8h-1.7c-.4 0-.9.2-1.2.5-.3.3-.5.7-.5 1.2v2.5c0 .9.4 1.7 1 2.3.6.6 1.5 1 2.4 1h.3c.3 1.3 1.1 2.4 2 3.3 1 .9 2.2 1.4 3.5 1.6v3.4H16V31h10v-1.7h-4.2v-3.4c1.3-.2 2.6-.7 3.6-1.6 1-.9 1.7-2 2-3.3h.2c.9 0 1.7-.4 2.4-1 .6-.6 1-1.5 1-2.3v-2.5c0-.4-.2-.9-.5-1.2-.3-.3-.7-.5-1.2-.5zm-15 5.8c-.4 0-.9-.2-1.2-.5-.3-.3-.5-.7-.5-1.2v-2.5h1.7v4.2zm11.7 0c0 .7-.1 1.3-.4 1.9-.3.6-.6 1.2-1.1 1.6-.5.5-1.1.8-1.7 1.1-.6.2-1.3.4-2 .3-1.3-.1-2.6-.7-3.5-1.6-.9-1-1.4-2.3-1.4-3.6v-6.4h10v6.7zm3.3-1.6c0 .4-.2.9-.5 1.2-.3.3-.7.5-1.2.5v-4.1h1.7v2.4z" />
-                  </svg>
+                <div class="point-ic me-3">
+                  <v-icon name="bars" size="25"></v-icon>
                 </div>
                 <span><b>Performance by design, not chance</b> - context-specific and personalised insights  to enable you to optimise life and work performance management</span>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- images -->
+        <div class="col-lg-6 order-lg-first">
+          <v-inview
+            class="img-wrap"
+            add-class="__in"
+          >
+            <img
+              src="/images/home/app-2a.png"
+              alt="Detalytics App"
+              width="482"
+              height="887"
+              loading="lazy"
+              class="img"
+              :style="{
+                '--delay': '.4s',
+                width: '72%',
+                bottom: '0%',
+                left: '5%',
+              }"
+            >
+            <img
+              src="/images/home/app-2b.png"
+              alt="Detalytics App"
+              width="458"
+              height="372"
+              loading="lazy"
+              class="img"
+              :style="{
+                '--delay': '.8s',
+                width: '69%',
+                bottom: '70%',
+                right: '5%',
+              }"
+            >
+          </v-inview>
+        </div>
+
       </div>
 
     </div>
@@ -110,41 +116,39 @@
   align-items: center;
   font-size: .8rem;
   padding: 1rem 0;
+  color: #23575C;
+  &-ic{
+    width: 3rem;
+    min-width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #23575C;
+  }
 }
 
 .img-wrap{
   position: relative;
+  padding-bottom: 130%;
   user-select: none;
-  &-items{
-    position: relative;
-    padding-bottom: 130%;
-    .item{
-      position: absolute;
-      height: auto;
-      opacity: 0;
-      transform: translateY(1.5em);
-      transition-property: transform, opacity;
-      transition-duration: .3s;
-      transition-timing-function: ease-out;
-    }
-    .item-1{
-      width: 72%;
-      bottom: 0%;
-      left: 5%;
-    }
-    .item-2{
-      width: 69%;
-      bottom: 70%;
-      right: 5%;
-    }
-
-    &.__in{
-      .item{
-        opacity: 1;
-        transform: translate(0);
-        transition-duration: 1s;
-        transition-delay: var(--delay);
-      }
+  .img{
+    position: absolute;
+    height: auto;
+    opacity: 0;
+    transform: translateY(1.5em);
+    transition-property: transform, opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+  }
+  &.__in{
+    .img{
+      opacity: 1;
+      transform: translate(0);
+      transition-duration: 1.3s, .5s;
+      transition-delay: var(--delay);
     }
   }
 }
@@ -162,6 +166,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
+  @media (min-width: @screen-lg) {
+    transform: translate(-50%, -50%);
+  }
 }
 </style>

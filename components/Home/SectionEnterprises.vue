@@ -173,7 +173,7 @@ const [$slider, slider] = useKeenSlider({
 .slider-item{
   flex: 0 0 100%;
   min-width: 1px;
-  padding: 0 .5rem 1rem;
+  padding: 0 .75rem 1rem;
   @media (min-width: @screen-lg) {
     padding: 0 1rem 1rem;
   }
@@ -182,14 +182,16 @@ const [$slider, slider] = useKeenSlider({
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.25rem;
+    text-align: center;
+    padding: 1.5rem;
     border-radius: 1rem;
     background-color: #fff;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
     user-select: none;
     @media (min-width: @screen-lg) {
       flex-direction: row;
       padding: 2rem;
+      text-align: left;
     }
   }
   &-cover{
@@ -202,7 +204,7 @@ const [$slider, slider] = useKeenSlider({
     }
   }
   &-label{
-    font-size: .875rem;
+    font-size: .75rem;
     text-transform: uppercase;
     color: var(--card-color-3);
     @media (min-width: @screen-lg) {
@@ -221,7 +223,10 @@ const [$slider, slider] = useKeenSlider({
   &-desc{
     font-size: 1rem;
     color: var(--card-color-2);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    @media (min-width: @screen-lg) {
+      margin-bottom: 2rem;
+    }
   }
   &-cta{
     .btn{

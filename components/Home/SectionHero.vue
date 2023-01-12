@@ -30,7 +30,7 @@ const onTextChanged = (newText) => {
       </div>
     </div>
 
-    <div class="lightning">
+    <div class="lightning d-none d-md-block">
       <img src="@/assets/images/light-red.svg" alt="" width="585" height="585" :style="{ marginLeft: '-8rem' }">
       <img src="@/assets/images/light-blue.svg" alt="" width="585" height="585" :style="{ marginLeft: '8rem' }">
     </div>
@@ -38,22 +38,24 @@ const onTextChanged = (newText) => {
     <div class="container text-center position-relative">
       <h1 class="title">
         Activate
-        <CompGifText
-          :text="[
-            'feeling your best in work and life',
-            'a rejuvenated mind and body',
-            'the satisfaction of peak performance',
-            'the joy of travel',
-            'the potential to always perform your best',
-            'the ease of a balanced/optimised lifestyle',
-            'a healthy body and mind',
-            'the enjoyment of optimised learning',
-            'your love for life',
-          ]"
-          :speed="50"
-          :clearSpeed="15"
-          @changed="onTextChanged"
-        />
+        <span class="d-block d-md-inline-block">
+          <CompGifText
+            :text="[
+              'feeling your best in work and life',
+              'a rejuvenated mind and body',
+              'the satisfaction of peak performance',
+              'the joy of travel',
+              'the potential to always perform your best',
+              'the ease of a balanced/optimised lifestyle',
+              'a healthy body and mind',
+              'the enjoyment of optimised learning',
+              'your love for life',
+            ]"
+            :speed="50"
+            :clearSpeed="15"
+            @changed="onTextChanged"
+          />
+        </span>
       </h1>
       <h2 class="desc">
         With Detalytics, activate your best potential in work and life.
@@ -87,6 +89,7 @@ const onTextChanged = (newText) => {
 .desc{
   font-size: 1.2rem;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .gallery{

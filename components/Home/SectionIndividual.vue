@@ -7,50 +7,6 @@
       </div>
 
       <div class="row align-items-center g-5 position-relative">
-        <!-- images -->
-        <div class="col-lg-6 order-lg-last">
-          <div class="img-wrap">
-            <v-inview class="img-wrap-items" add-class="__in">
-              <img
-                src="/images/home/app-3b.png"
-                alt="Detalytics"
-                width="384"
-                height="304"
-                loading="lazy"
-                class="img img-1"
-                :style="{ '--delay': '.1s' }"
-              >
-              <img
-                src="/images/home/app-3c.png"
-                alt="Detalytics"
-                width="415"
-                height="249"
-                loading="lazy"
-                class="img img-2"
-                :style="{ '--delay': '.3s' }"
-              >
-              <img
-                src="/images/home/app-3d.png"
-                alt="Detalytics"
-                width="372"
-                height="311"
-                loading="lazy"
-                class="img img-3"
-                :style="{ '--delay': '.5s' }"
-              >
-              <img
-                src="/images/home/app-3a.png"
-                alt="Detalytics App"
-                width="438"
-                height="798"
-                loading="lazy"
-                class="img img-4"
-                :style="{ '--delay': '1s' }"
-              >
-            </v-inview>
-          </div>
-        </div>
-
         <!-- content -->
         <div class="col-lg-6">
           <div class="pe-xl-5">
@@ -82,6 +38,72 @@
             </div>
           </div>
         </div>
+
+        <!-- images -->
+        <div class="col-lg-6">
+          <v-inview
+            class="img-wrap"
+            add-class="__in"
+          >
+            <img
+              src="/images/home/app-3b.png"
+              alt="Detalytics"
+              width="384"
+              height="304"
+              loading="lazy"
+              class="img"
+              :style="{
+                '--delay': '.3s',
+                width: '57%',
+                top: '0%',
+                right: '0%',
+              }"
+            >
+            <img
+              src="/images/home/app-3c.png"
+              alt="Detalytics"
+              width="415"
+              height="249"
+              loading="lazy"
+              class="img"
+              :style="{
+                '--delay': '.5s',
+                width: '60%',
+                left: '0%',
+                top: '30%',
+              }"
+            >
+            <img
+              src="/images/home/app-3d.png"
+              alt="Detalytics"
+              width="372"
+              height="311"
+              loading="lazy"
+              class="img"
+              :style="{
+                '--delay': '.7s',
+                width: '55%',
+                right: '5%',
+                bottom: '10%',
+              }"
+            >
+            <img
+              src="/images/home/app-3a.png"
+              alt="Detalytics App"
+              width="438"
+              height="798"
+              loading="lazy"
+              class="img img-phone"
+              :style="{
+                '--delay': '1.3s',
+                width: '66%',
+                left: '25%',
+                top: '0%',
+              }"
+            >
+          </v-inview>
+        </div>
+
       </div>
 
     </div>
@@ -128,47 +150,29 @@
 
 .img-wrap{
   position: relative;
+  padding-bottom: 110%;
   user-select: none;
-  &-items{
-    position: relative;
-    padding-bottom: 110%;
+  .img{
+    position: absolute;
+    height: auto;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+  }
+  .img-phone{
+    transform: translateY(2rem);
+    transition-property: opacity, transform;
+  }
+  &.__in{
     .img{
-      position: absolute;
-      height: auto;
-      opacity: 0;
-      transition-property: transform, opacity;
-      transition-duration: .3s;
-      transition-timing-function: ease-out;
+      opacity: 1;
+      transition-duration: 1s;
+      transition-delay: var(--delay);
     }
-    .img-1{
-      width: 57%;
-      top: 0%;
-      right: 0%;
-    }
-    .img-2{
-      width: 60%;
-      left: 0%;
-      top: 30%;
-    }
-    .img-3{
-      width: 55%;
-      right: 5%;
-      bottom: 10%;
-    }
-    .img-4{
-      width: 66%;
-      left: 25%;
-      top: 0%;
-      transform: translateY(2rem);
-    }
-
-    &.__in{
-      .img{
-        opacity: 1;
-        transform: translate(0);
-        transition-duration: 1s;
-        transition-delay: var(--delay);
-      }
+    .img-phone{
+      transform: translate(0);
+      transition-duration: .5s, 1.3s;
     }
   }
 }
@@ -186,7 +190,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -90%);
+  transform: translate(-50%, 0%);
   @media (min-width: @screen-lg) {
     transform: translate(-20%, -50%);
   }
