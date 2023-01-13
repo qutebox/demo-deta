@@ -10,10 +10,10 @@
         <!-- content -->
         <div class="col-lg-6">
           <div class="pe-xl-5">
-            <h5 class="label">
+            <h5 class="font-label mb-3">
               FOR INDIVIDUALS
             </h5>
-            <h2 class="title">
+            <h2 class="font-title mb-4">
               Understand yourself, and activate your potential in
               <span class="d-block">
                 <CompGifText
@@ -28,8 +28,8 @@
                 />
               </span>
             </h2>
-            <div class="content">
-              <p>With 42, we target all aspects of your lifestyle, mind and body and develop a holistic wellbeing approach to empower your fullest potential in any situation. Define and align your goals  with (app), and discover what (app) can help you achieve with today.</p>
+            <div class="font-desc">
+              <p class="mb-4">With 42, we target all aspects of your lifestyle, mind and body and develop a holistic wellbeing approach to empower your fullest potential in any situation. Define and align your goals  with (app), and discover what (app) can help you achieve with today.</p>
               <div class="mt-5">
                 <a href="#" class="btn btn-cta" target="_blank" rel="noopener noreferrer">
                   Download the app
@@ -44,6 +44,7 @@
           <v-inview
             class="img-wrap"
             add-class="__in"
+            :style="{ paddingBottom: '110%' }"
           >
             <img
               src="/images/home/app-3b.png"
@@ -57,6 +58,7 @@
                 width: '57%',
                 top: '0%',
                 right: '0%',
+                transform: 'translateX(1rem)',
               }"
             >
             <img
@@ -71,6 +73,7 @@
                 width: '60%',
                 left: '0%',
                 top: '30%',
+                transform: 'translateX(-1rem)',
               }"
             >
             <img
@@ -85,6 +88,7 @@
                 width: '55%',
                 right: '5%',
                 bottom: '10%',
+                transform: 'translateX(1rem)',
               }"
             >
             <img
@@ -99,6 +103,7 @@
                 width: '66%',
                 left: '25%',
                 top: '0%',
+                transform: 'translateY(2rem)',
               }"
             >
           </v-inview>
@@ -125,7 +130,7 @@
   }
 }
 
-.title{
+.font-title{
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.2;
@@ -135,46 +140,11 @@
     font-size: 2.4rem;
   }
 }
-.content{
+.font-desc{
   color: #944182;
 }
-.label{
-  font-size: 1rem;
-  font-weight: 400;
+.font-label{
   color: fade(#AA5998, 63%);
-  margin-bottom: .75rem;
-  @media (min-width: @screen-lg) {
-    font-size: 1.2rem;
-  }
-}
-
-.img-wrap{
-  position: relative;
-  padding-bottom: 110%;
-  user-select: none;
-  .img{
-    position: absolute;
-    height: auto;
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: .3s;
-    transition-timing-function: ease-out;
-  }
-  .img-phone{
-    transform: translateY(2rem);
-    transition-property: opacity, transform;
-  }
-  &.__in{
-    .img{
-      opacity: 1;
-      transition-duration: 1s;
-      transition-delay: var(--delay);
-    }
-    .img-phone{
-      transform: translate(0);
-      transition-duration: .5s, 1.3s;
-    }
-  }
 }
 
 .btn-cta{

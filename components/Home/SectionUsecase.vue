@@ -31,13 +31,13 @@ const cards = [
 <template>
   <div id="Usecase" class="section-usecase">
     <div class="container">
-      <h4 class="label text-lg-center">
+      <h4 class="font-label mb-3 text-lg-center">
         USE CASES
       </h4>
-      <h2 class="title text-lg-center">
+      <h2 class="font-subtitle mb-4 text-lg-center">
         Your all-in-one personalised (digital) coach empowering you to activate your optimal readiness for all important moments in your life.
       </h2>
-      <div class="desc text-lg-center">
+      <div class="font-desc text-lg-center">
         Your goals change by context, and (app) is the only app that contextually aligns to all your goals in life and work. <br>With (app), achieve a holistic wellbeing approach to empower your fullest potential in any situation
       </div>
 
@@ -92,24 +92,14 @@ const cards = [
   }
 }
 
-.title{
-  font-size: 1.8rem;
-  font-weight: 500;
+.font-subtitle{
   color: #543573;
-  margin-bottom: 1.5rem;
 }
-.desc{
-  font-size: 1rem;
+.font-desc{
   color: #785C94;
 }
-.label{
-  font-size: 1rem;
-  text-transform: uppercase;
+.font-label{
   color: rgba(84, 53, 115, 0.78);
-  margin-bottom: .75rem;
-  @media (min-width: @screen-lg) {
-    font-size: 1.2rem;
-  }
 }
 
 .card-item{

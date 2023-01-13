@@ -1,13 +1,13 @@
 <template>
   <div id="Lifestyles" class="section-lifestyles">
     <div class="container">
-      <h5 class="label text-lg-center">
+      <h5 class="font-label mb-3 text-lg-center">
         YOUR JOURNEY WITH DETALYTICS
       </h5>
-      <h2 class="title text-lg-center">
+      <h2 class="font-title text-lg-center">
         Evidence-based life and work transformation in every aspect of your lifestyle
       </h2>
-      <div class="desc text-lg-center">
+      <div class="font-desc text-lg-center">
         Gain key personalised  insights into your body, mind and health with baseline assessments. From sleep, activities to diet, optimise your lifestyle behaviours and impact your goals.
       </div>
       <div class="text-center mb-5">
@@ -27,31 +27,20 @@
   }
 }
 
-.title{
-  font-size: 1.8rem;
-  font-weight: 500;
+.font-title{
   color: #2C335C;
   margin: 0 auto 2rem;
   width: 53rem;
   max-width: 100%;
-  @media (min-width: @screen-lg) {
-    font-size: 2.4rem;
-  }
 }
-.desc{
+.font-desc{
   color: #532749;
   width: 53rem;
   max-width: 100%;
   margin: 0 auto 3rem;
 }
-.label{
-  font-size: 1rem;
-  font-weight: 400;
+.font-label{
   color: #2C335C;
-  margin-bottom: 1rem;
-  @media (min-width: @screen-lg) {
-    font-size: 1.2rem;
-  }
 }
 .img{
   width: 60rem;

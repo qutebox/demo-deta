@@ -6,13 +6,13 @@
         <div class="row g-5 align-items-center position-relative">
           <div class="col-lg-7">
             <div class="pe-xl-4">
-              <h5 class="label">
+              <h5 class="font-label mb-3">
                 SCIENTIFIC, RESEARCH-BASED APPROACH
               </h5>
-              <h2 class="title">
+              <h2 class="font-title mb-4">
                 Designed by leading international experts with over 20+ years of experience in the field of circadian science and performance readiness management
               </h2>
-              <p class="desc">
+              <p class="font-desc">
                 Targeting just one aspect (sleep, fitness or diet) isn’t enough. With (app), we offer context-specific and personalised insights diving deep into your daily lifestyle behaviours and circadian rhythm patterns. Through a gold-standard science-backed approach supported by a panel of renounced specialists, in the field of medicine, high-performance , our app provides gold-standard insights for you to gain full clarity on your lifestyle patterns and personalised approach in life and work performance management.
               </p>
             </div>
@@ -33,13 +33,13 @@
         <div class="row g-5 align-items-center position-relative">
           <div class="col-lg-7">
             <div class="ps-xl-5">
-              <h5 class="label">
+              <h5 class="font-label mb-3">
                 CONTEXT-DRIVEN TO YOUR LIFESTYLE.
               </h5>
-              <h2 class="title">
+              <h2 class="font-title mb-4">
                 We demystify health and wellbeing into actionable and context-driven insights that are unique to your lifestyle
               </h2>
-              <p class="desc">
+              <p class="font-desc">
                 With 42, gain full clarity on your lifestyle patterns  and be guided on what to do at each step of your life journey. Our app provides gold-standard insights for you to gain full clarity on your lifestyle patterns and personalised approach in life and work performance management. We analyze metrics already proven by science and connect the dots between those metrics, your lifestyle behaviours, and its impact on your physical and mental performance.
               </p>
             </div>
@@ -69,8 +69,6 @@
   --color-1: #DF8A2E;
   --color-2: #DF8A2E;
   --color-3: #DF8A2E;
-  --cover-pos-l: 5%;
-  --cover-pos-r: auto;
   background-color: rgba(253, 212, 208, 0.17);
   background-image: linear-gradient(180deg, rgba(253, 212, 208, 0.17) 0%, rgba(255, 242, 242, 0.17) 100%);
   .cover img{
@@ -104,26 +102,16 @@
   }
 }
 
-.title{
-  font-size: 1.8rem;
-  font-weight: 500;
+.font-title{
   color: var(--color-1);
-  margin-bottom: 1.5rem;
-  @media (min-width: @screen-lg) {
-    font-size: 2.4rem;
-  }
 }
-.desc{
-  font-size: 1rem;
+.font-desc{
   color: var(--color-2);
 }
-.label{
-  font-size: 1.2rem;
-  font-weight: 400;
+.font-label{
   color: var(--color-3);
-  text-transform: uppercase;
-  margin-bottom: 1rem;
 }
+
 .cover{
   position: relative;
   padding-bottom: 70%;

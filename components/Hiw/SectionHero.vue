@@ -41,10 +41,10 @@ const points = [
           </div>
 
           <div class="col-lg-7">
-            <h1 class="heading">
+            <h1 class="font-heading mb-4 text-center text-lg-left">
               42 by Detalytics
             </h1>
-            <h5 class="heading-desc">
+            <h5 class="font-heading-desc mb-5 text-center text-lg-left">
               Scientifically proven and uniquely personalised, to enhance your work and life performance
             </h5>
           </div>
@@ -55,10 +55,10 @@ const points = [
     <!-- bottom -->
     <div class="hero-btm">
       <div class="container">
-        <h5 class="label text-center">
+        <h5 class="font-label mb-3 text-center">
           WHY DETALYTICS
         </h5>
-        <h2 class="title text-center">
+        <h2 class="font-title mb-5 text-center">
           What makes <br class="d-md-none">Detalytics different
         </h2>
 
@@ -71,7 +71,7 @@ const points = [
             <v-inview
               class="reason"
               add-class="__in"
-              :style="{ '--delay': `${(index * 0.2) + 0.5}s` }"
+              :style="{ '--delay': `${(index * 0.2) + 0.3}s` }"
             >
               <div class="d-flex align-items-center d-lg-block mb-3">
                 <div class="reason-icon me-4 me-lg-0 mb-lg-4">
@@ -126,45 +126,24 @@ const points = [
     height: auto;
   }
 }
-.heading{
-  font-size: 2.4rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-  text-align: center;
+.font-heading{
+}
+.font-heading-desc{
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
   @media (min-width: @screen-lg) {
-    font-size: 3.2rem;
-    text-align: left;
-  }
-  &-desc{
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 3rem;
-    text-align: center;
-    @media (min-width: @screen-lg) {
-      font-size: 1.6rem;
-      text-align: left;
-    }
+    font-size: 1.6rem;
   }
 }
 
-.label{
-  font-size: 1rem;
-  font-weight: 400;
+.font-label{
   color: #54ABB1;
-  margin-bottom: .5rem;
-  @media (min-width: @screen-lg) {
-    font-size: 1.2rem;
-  }
 }
-.title{
-  font-size: 1.8rem;
-  font-weight: 500;
+.font-title{
   color: #36898F;
-  @media (min-width: @screen-lg) {
-    font-size: 2.4rem;
-  }
 }
+
 .reason{
   opacity: 0;
   transform: translateY(1rem);

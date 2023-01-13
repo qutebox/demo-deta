@@ -62,13 +62,13 @@ const [$slider, slider] = useKeenSlider({
       </div>
 
       <div class="position-relative">
-        <h5 class="label text-lg-center">
+        <h5 class="font-label mb-3 text-lg-center">
           FOR ENTERPRISES
         </h5>
-        <h2 class="title text-lg-center">
+        <h2 class="font-title mb-4 text-lg-center">
           Activate your organisation’s potential today
         </h2>
-        <div class="desc text-lg-center">
+        <div class="font-desc text-lg-center">
           Activate & improve employee engagement, readiness and performance through <br class="d-none d-md-block">work & life performance coaching plans, personalised for each employee
         </div>
 
@@ -141,26 +141,14 @@ const [$slider, slider] = useKeenSlider({
   }
 }
 
-.title{
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 1.2;
-  color: #2C335C;
-  @media (min-width: @screen-lg) {
-    font-size: 2.4rem;
-  }
-}
-.desc{
+.font-title{
   color: #2C335C;
 }
-.label{
-  font-size: 1rem;
-  font-weight: 400;
+.font-desc{
   color: #2C335C;
-  margin-bottom: .75rem;
-  @media (min-width: @screen-lg) {
-    font-size: 1.2rem;
-  }
+}
+.font-label{
+  color: #2C335C;
 }
 
 .slider{

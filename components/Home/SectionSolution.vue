@@ -10,7 +10,7 @@
         <!-- content -->
         <div class="col-lg-6">
           <div class="ps-xl-5">
-            <h2 class="title">
+            <h2 class="font-title mb-4">
               <span class="d-block">
                 <CompGifText
                   :text="[
@@ -23,9 +23,9 @@
               </span>
               is not enough.
             </h2>
-            <div class="content">
-              <p>Sleep, fitness, diet - It’s all connected. Current health and wellbeing solutions only specialise in a core aspect, but the truth is, achieving mindful wellbeing requires a holistic approach.</p>
-              <p>With (app), we target all aspects of your lifestyle, mind and body, developing a holistic wellbeing approach to empower your fullest potential in any situation.</p>
+            <div class="font-desc">
+              <p class="mb-4">Sleep, fitness, diet - It’s all connected. Current health and wellbeing solutions only specialise in a core aspect, but the truth is, achieving mindful wellbeing requires a holistic approach.</p>
+              <p class="mb-4">With (app), we target all aspects of your lifestyle, mind and body, developing a holistic wellbeing approach to empower your fullest potential in any situation.</p>
               <div class="mt-5">
                 <NuxtLink to="/" class="btn btn-cta">
                   Our Solutions
@@ -40,6 +40,7 @@
           <v-inview
             class="img-wrap"
             add-class="__in"
+            :style="{ paddingBottom: '90%' }"
           >
             <img
               src="/images/home/pic-4.png"
@@ -53,6 +54,7 @@
                 width: '66%',
                 top: '5%',
                 right: '6%',
+                transform: 'translateX(-1rem)',
               }"
             >
             <img
@@ -67,6 +69,7 @@
                 width: '78%',
                 top: '30%',
                 left: '3%',
+                transform: 'translateX(1rem)',
               }"
             >
             <img
@@ -81,6 +84,7 @@
                 width: '63%',
                 right: '0',
                 bottom: '0',
+                transform: 'translateX(-1rem)',
               }"
             >
           </v-inview>
@@ -107,41 +111,11 @@
   }
 }
 
-.title{
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
+.font-title{
   color: #545C87;
-  @media (min-width: @screen-lg) {
-    font-size: 2.4rem;
-  }
 }
-.content{
+.font-desc{
   color: #434A6D;
-}
-
-.img-wrap{
-  position: relative;
-  user-select: none;
-  padding-bottom: 90%;
-  .img{
-    position: absolute;
-    height: auto;
-    opacity: 0;
-    transform: translateY(1.5rem);
-    transition-property: transform, opacity;
-    transition-duration: .3s;
-    transition-timing-function: ease-out;
-  }
-  &.__in{
-    .img{
-      opacity: 1;
-      transform: translate(0);
-      transition-duration: 1.3s, .5s;
-      transition-delay: var(--delay);
-    }
-  }
 }
 
 .btn-cta{

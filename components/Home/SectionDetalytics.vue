@@ -9,14 +9,15 @@
         <!-- content -->
         <div class="col-lg-6">
           <div class="pe-xl-5">
-            <h5 class="label">
+            <h5 class="font-label mb-3">
               WITH DETALYTICS
             </h5>
-            <h2 class="title">
+            <h2 class="font-title mb-4">
               Power your health, <br>power your mind.
             </h2>
-            <div class="content">
-              <p>(app) connects the dots/gaps between fitness, health, wellbeing and sleep, to provide a holistic evaluation of your lifestyle behaviours. With (app), encompass a holistic approach to your lifestyle.  Gain full clarity on your lifestyle patterns  and rest assured that you are always prepared to be at your best, at everyday and any moment.</p>
+            <div class="font-desc">
+              <p class="mb-4">(app) connects the dots/gaps between fitness, health, wellbeing and sleep, to provide a holistic evaluation of your lifestyle behaviours. With (app), encompass a holistic approach to your lifestyle.  Gain full clarity on your lifestyle patterns  and rest assured that you are always prepared to be at your best, at everyday and any moment.</p>
+
               <div class="point">
                 <div class="point-ic me-3">
                   <v-icon name="trophy" size="25"></v-icon>
@@ -67,28 +68,16 @@
   }
 }
 
-.title{
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
+.font-title{
   color: #D07575;
-  @media (min-width: @screen-lg) {
-    font-size: 2.4rem;
-  }
 }
-.content{
+.font-desc{
   color: #BE6363;
 }
-.label{
-  font-size: 1rem;
-  font-weight: 400;
+.font-label{
   color: #D07575;
-  margin-bottom: .75rem;
-  @media (min-width: @screen-lg) {
-    font-size: 1.2rem;
-  }
 }
+
 .point{
   display: flex;
   align-items: center;

@@ -9,14 +9,14 @@
         <!-- content -->
         <div class="col-lg-6">
           <div class="pe-xl-5">
-            <h2 class="title">
+            <h2 class="font-title mb-4">
               With (app), activate your best at work and life everyday, in every situation
             </h2>
-            <div class="content">
-              <p>Want to achieve your peak performance at work? Want to prevent burnout and improve your mental wellbeing? Stop anti early aging when you are young, or better manage your weight?</p>
-              <p>Through diving deep into your daily lifestyle behaviours and circadian rhythm patterns, gain key insights to your health and understand how to optimise your lifestyle effortlessly - to achieve all your goals.</p>
-              <p>With 42, develop a personalised action plan activate your best at work and life, whenever and wherever.</p>
-              <div class="mt-4">
+            <div class="font-desc">
+              <p class="mb-4">Want to achieve your peak performance at work? Want to prevent burnout and improve your mental wellbeing? Stop anti early aging when you are young, or better manage your weight?</p>
+              <p class="mb-4">Through diving deep into your daily lifestyle behaviours and circadian rhythm patterns, gain key insights to your health and understand how to optimise your lifestyle effortlessly - to achieve all your goals.</p>
+              <p class="mb-4">With 42, develop a personalised action plan activate your best at work and life, whenever and wherever.</p>
+              <div class="mt-5">
                 <NuxtLink to="/" class="btn btn-cta">
                   Find out more
                 </NuxtLink>
@@ -39,10 +39,11 @@
               loading="lazy"
               class="img"
               :style="{
-                '--delay': '.5s',
+                '--delay': '.3s',
                 width: '60%',
                 top: '0',
                 right: '10%',
+                transform: 'translateX(1rem)',
               }"
             >
             <img
@@ -53,10 +54,11 @@
               loading="lazy"
               class="img"
               :style="{
-                '--delay': '.8s',
+                '--delay': '.5s',
                 width: '63%',
                 top: '33%',
                 left: '3%',
+                transform: 'translateX(-1rem)',
               }"
             >
             <img
@@ -67,10 +69,11 @@
               loading="lazy"
               class="img"
               :style="{
-                '--delay': '1s',
+                '--delay': '.7s',
                 width: '57%',
                 right: '0%',
                 bottom: '0%',
+                transform: 'translateX(1rem)',
               }"
             >
           </v-inview>
@@ -96,41 +99,11 @@
   }
 }
 
-.title{
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
+.font-title{
   color: #DF8A2E;
-  @media (min-width: @screen-md) {
-    font-size: 2.4rem;
-  }
 }
-.content{
+.font-desc{
   color: #9D5B14;
-}
-
-.img-wrap{
-  position: relative;
-  user-select: none;
-  padding-bottom: 100%;
-  .img{
-    position: absolute;
-    height: auto;
-    opacity: 0;
-    transform: translateY(1.5rem);
-    transition-property: transform, opacity;
-    transition-duration: .3s;
-    transition-timing-function: ease-out;
-  }
-  &.__in{
-    .img{
-      opacity: 1;
-      transform: translate(0);
-      transition-duration: 1.3s, .5s;
-      transition-delay: var(--delay);
-    }
-  }
 }
 
 .btn-cta{

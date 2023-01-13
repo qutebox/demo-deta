@@ -4,5 +4,6 @@
     <HiwSectionPoints />
     <HiwSectionLifestyle />
     <HiwSectionHowItWorks />
+    <LayoutsCta />
   </div>
 </template>

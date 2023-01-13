@@ -8,5 +8,6 @@
     <HomeSectionScience />
     <HomeSectionIndividual />
     <HomeSectionEnterprises />
+    <LayoutsCta />
   </div>
 </template>

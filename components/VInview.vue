@@ -27,6 +27,7 @@ const onView = (isVisible) => {
 <template>
   <div ref="$el" v-observe-visibility="{
     once,
+    throttle: 300,
     callback: onView,
   }">
     <slot />

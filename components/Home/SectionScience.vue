@@ -10,14 +10,15 @@
         <!-- content -->
         <div class="col-lg-6">
           <div class="ps-xl-5">
-            <h5 class="label">
+            <h5 class="font-label mb-3">
               SCIENCE BACKED
             </h5>
-            <h2 class="title">
+            <h2 class="font-title mb-4">
               Peak performance by design, backed by science
             </h2>
-            <div class="content">
-              <p>Backed by science, gain full clarity on your lifestyle patterns  and rest assured that you are always prepared to be at your best, at everyday and any moment. Designed by leading international experts with over 20 years of experience in the field of circadian science and performance readiness management. With (app), understand how your body and mind works. Gain key insights to your health and understand how to optimise your lifestyle effortlessly.</p>
+            <div class="font-desc">
+              <p class="mb-4">Backed by science, gain full clarity on your lifestyle patterns  and rest assured that you are always prepared to be at your best, at everyday and any moment. Designed by leading international experts with over 20 years of experience in the field of circadian science and performance readiness management. With (app), understand how your body and mind works. Gain key insights to your health and understand how to optimise your lifestyle effortlessly.</p>
+
               <div class="point">
                 <div class="point-ic me-3">
                   <v-icon name="person" size="25"></v-icon>
@@ -39,6 +40,7 @@
           <v-inview
             class="img-wrap"
             add-class="__in"
+            :style="{ paddingBottom: '130%' }"
           >
             <img
               src="/images/home/app-2a.png"
@@ -52,6 +54,7 @@
                 width: '72%',
                 bottom: '0%',
                 left: '5%',
+                transform: 'translateY(1.5em)',
               }"
             >
             <img
@@ -66,6 +69,7 @@
                 width: '69%',
                 bottom: '70%',
                 right: '5%',
+                transform: 'translateY(1.5em)',
               }"
             >
           </v-inview>
@@ -89,28 +93,16 @@
   padding: 5rem 0;
 }
 
-.title{
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-  color: #23575C;
-  @media (min-width: @screen-lg) {
-    font-size: 2.4rem;
-  }
-}
-.content{
+.font-title{
   color: #23575C;
 }
-.label{
-  font-size: 1rem;
-  font-weight: 400;
+.font-desc{
   color: #23575C;
-  margin-bottom: .75rem;
-  @media (min-width: @screen-lg) {
-    font-size: 1.2rem;
-  }
 }
+.font-label{
+  color: #23575C;
+}
+
 .point{
   display: flex;
   align-items: center;
@@ -127,29 +119,6 @@
     justify-content: center;
     color: #fff;
     background-color: #23575C;
-  }
-}
-
-.img-wrap{
-  position: relative;
-  padding-bottom: 130%;
-  user-select: none;
-  .img{
-    position: absolute;
-    height: auto;
-    opacity: 0;
-    transform: translateY(1.5em);
-    transition-property: transform, opacity;
-    transition-duration: .3s;
-    transition-timing-function: ease-out;
-  }
-  &.__in{
-    .img{
-      opacity: 1;
-      transform: translate(0);
-      transition-duration: 1.3s, .5s;
-      transition-delay: var(--delay);
-    }
   }
 }
 

@@ -36,7 +36,7 @@ const onTextChanged = (newText) => {
     </div>
 
     <div class="container text-center position-relative">
-      <h1 class="title">
+      <h1 class="font-heading mb-3">
         Activate
         <span class="d-block d-md-inline-block">
           <CompGifText
@@ -57,7 +57,7 @@ const onTextChanged = (newText) => {
           />
         </span>
       </h1>
-      <h2 class="desc">
+      <h2 class="font-desc">
         With Detalytics, activate your best potential in work and life.
       </h2>
     </div>
@@ -77,16 +77,8 @@ const onTextChanged = (newText) => {
   padding: 3rem 0;
 }
 
-.title{
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  @media (min-width: @screen-md) {
-    font-size: 3.2rem;
-  }
-}
-.desc{
+.font-heading{}
+.font-desc{
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;

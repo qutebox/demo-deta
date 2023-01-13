@@ -4,9 +4,14 @@ import { ref, watch } from 'vue';
 // eslint-disable-next-line no-undef
 const route = useRoute();
 const $nav = ref(null);
+const childToggle = ref('');
 let timer = null;
 
 // events
+const onToggleChild = (newVal) => {
+  childToggle.value = newVal !== childToggle.value ? newVal : '';
+};
+
 const onToggleMNav = () => {
   const isOpen = !$nav.value.classList.contains('__active');
 
@@ -69,15 +74,54 @@ watch(route, () => {
               How it works
             </NuxtLink>
           </li>
-          <li>
-            <NuxtLink to="/">
+          <li class="child" :class="{ __active: childToggle === 'business' }">
+            <a href="#" class="child-toggle" @click.prevent="onToggleChild('business')">
               For Businesses <VIcon name="caret" />
-            </NuxtLink>
+            </a>
+            <ul class="child-nav">
+              <li>
+                <NuxtLink to="/businesses/safety-critical">
+                  Safety Critical
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/businesses/corporate-employers">
+                  Corporate Employers
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/businesses/insurers">
+                  Insurers
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/businesses/healthcare-providers">
+                  Healthcare Providers
+                </NuxtLink>
+              </li>
+            </ul>
           </li>
-          <li>
-            <NuxtLink to="/individuals/work-performance">
+          <li class="child" :class="{ __active: childToggle === 'individuals' }">
+            <a href="#" class="child-toggle" @click.prevent="onToggleChild('individuals')">
               For Individuals <VIcon name="caret" />
-            </NuxtLink>
+            </a>
+            <ul class="child-nav">
+              <li>
+                <NuxtLink to="/individuals/work-performance">
+                  Work Performance
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/individuals/workplace-safety">
+                  Workplace Safety
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/individuals/life-lovers">
+                  Life Lovers
+                </NuxtLink>
+              </li>
+            </ul>
           </li>
           <li>
             <NuxtLink to="/">
@@ -89,7 +133,7 @@ watch(route, () => {
               About
             </NuxtLink>
           </li>
-          <li class="mt-3 mt-lg-0">
+          <li class="mt-3 mt-lg-0 ms-lg-4">
             <a href="#" class="menu-btn" target="_blank">
               Get your assessment
             </a>
@@ -191,7 +235,7 @@ watch(route, () => {
     flex-direction: row;
     align-items: center;
     li:not(:first-child){
-      margin-left: 3rem;
+      margin-left: .5rem;
     }
     a.menu-btn{
       width: auto;
@@ -199,16 +243,16 @@ watch(route, () => {
   }
 
   a{
-    display: inline-block;
+    display: block;
     font-size: 1rem;
     text-decoration: none;
     color: var(--color-500);
     transition: color .3s;
-    padding: .85rem 1rem;
-    @media (min-width: @screen-lg) {
-      padding: 0;
-    }
+    padding: .85rem 1.25rem;
     &:hover{
+      color: var(--main-500);
+    }
+    &.router-link-exact-active{
       color: var(--main-500);
     }
   }
@@ -224,6 +268,61 @@ watch(route, () => {
     transition: background .3s;
     &:hover{
       background-color: var(--main-300);
+    }
+  }
+
+  .child{
+    position: relative;
+    &-nav{
+      list-style: none;
+      padding: .5rem 1rem;
+      margin: 0 -1rem;
+      background-color: #F2F9FF;
+      box-shadow: inset 0 0px 24px rgba(45, 123, 223, 0.1);
+      display: none;
+      li{
+        margin: 0;
+      }
+      a{
+        display: block;
+      }
+    }
+    &.__active{
+      .child-nav{
+        display: block;
+      }
+    }
+
+    // desktop
+    @media (min-width: @screen-lg) {
+      .child-nav{
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        top: 100%;
+        padding: .65rem .5rem;
+        margin: 0;
+        background-color: #fff;
+        white-space: nowrap;
+        border-radius: .5rem;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+        display: block;
+        pointer-events: none;
+        opacity: 0;
+        transform: translate(-50%, 1rem);
+        transition: transform .3s, opacity .3s;
+        a{
+          padding: .5rem 1.5rem;
+        }
+      }
+      // state
+      &:hover{
+        .child-nav{
+          pointer-events: initial;
+          opacity: 1;
+          transform: translate(-50%, 0);
+        }
+      }
     }
   }
 }

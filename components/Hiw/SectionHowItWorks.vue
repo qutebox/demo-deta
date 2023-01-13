@@ -4,27 +4,29 @@
     <div id="HowItWork1" class="section-hiw section-hiw-1">
       <div class="container">
         <!-- heading -->
-        <h5 class="label text-center mb-2" :style="{ opacity: .7 }">
-          HOW IT WORKS
-        </h5>
-        <h2 class="title text-center mb-5 pb-3">
-          It’s all about you.
-        </h2>
+        <div class="heading">
+          <h5 class="font-label text-center mb-2" :style="{ opacity: .7 }">
+            HOW IT WORKS
+          </h5>
+          <h2 class="font-title text-center mb-5 pb-3">
+            It’s all about you.
+          </h2>
+        </div>
 
-        <h3 class="sub-title mb-4 position-relative" :style="{ zIndex: 1 }">
+        <h3 class="font-subtitle mb-4 position-relative" :style="{ zIndex: 1 }">
           01 Select Your Personal Goal
         </h3>
         <div class="row align-items-center g-5">
           <!-- body -->
           <div class="col-lg-6">
             <div class="content ps-xl-4">
-              <div class="label mb-3">
+              <div class="font-label mb-3">
                 CONTEXT-DRIVEN
               </div>
-              <h2 class="title mb-4">
+              <h2 class="font-title mb-4">
                 Only what’s relevant to you. Select your goal and get a curated experience.
               </h2>
-              <div class="desc">
+              <div class="font-desc">
                 <p class="mb-4">From health, learning management to fatigue management and early anti-ageing, pick the goal that best aligns with your current context.  Choose from work, quality of life, to travel and financial wellbeing goals. Based on your lifestyle behaviours, receive a personalised action plan aligned to your goals and real-time context.</p>
                 <p class="mb-2"><b>Set curated goals in body and brain health, such as:</b></p>
                 <ul class="ps-3">
@@ -55,7 +57,7 @@
                 loading="lazy"
                 class="img"
                 :style="{
-                  '--delay': '.7s',
+                  '--delay': '.3s',
                   left: '15%',
                   top: '0%',
                   width: '69%',
@@ -76,17 +78,17 @@
           <!-- body -->
           <div class="col-lg-6">
             <div class="content">
-              <h3 class="sub-title mb-5">
+              <h3 class="font-subtitle mb-5">
                 02 Assessments and Analytics
               </h3>
 
-              <div class="label mb-3">
+              <div class="font-label mb-3">
                 HOLISTIC
               </div>
-              <h2 class="title mb-4">
+              <h2 class="font-title mb-4">
                 Understand everything that makes you tick. Gain actionable insights personalised to your goals and lifestyle.
               </h2>
-              <div class="desc">
+              <div class="font-desc">
                 <p class="mb-4">Through medical-backed assessments designed to capture the interconnected factors of your body and mind, understand your lifestyle patterns and it’s holistic impact on your body and mind.</p>
                 <ul class="ps-3">
                   <li class="py-1 ps-3">Explore baseline assessments from physiological, cognitive to lifestyle</li>
@@ -115,7 +117,7 @@
                 loading="lazy"
                 class="img"
                 :style="{
-                  '--delay': '.7s',
+                  '--delay': '.3s',
                   left: '0%',
                   top: '0%',
                   width: '55%',
@@ -131,7 +133,7 @@
                 loading="lazy"
                 class="img"
                 :style="{
-                  '--delay': '.7s',
+                  '--delay': '.3s',
                   left: '50%',
                   top: '10%',
                   width: '55%',
@@ -147,13 +149,13 @@
           <!-- body -->
           <div class="col-lg-6">
             <div class="content">
-              <div class="label mb-3">
+              <div class="font-label mb-3">
                 DYNAMIC
               </div>
-              <h2 class="title mb-4">
+              <h2 class="font-title mb-4">
                 A different you everyday. Dynamically updates, predicts and recommends according to your changing body and mind.
               </h2>
-              <div class="desc">
+              <div class="font-desc">
                 <p class="mb-4">Based on your lifestyle behaviours, receive a personalised action plan aligned to your selected goals and lifestyle context. Gain full clarity on your lifestyle patterns, and it’s connected impact on your physical and mental performance.</p>
                 <ul class="ps-3 w-500">
                   <li class="py-1 ps-3">Receive daily lifestyle optimization recommendations on how you can improve your lifestyle behaviours</li>
@@ -181,7 +183,7 @@
                 loading="lazy"
                 class="img"
                 :style="{
-                  '--delay': '.5s',
+                  '--delay': '.3s',
                   left: '7%',
                   top: '15%',
                   width: '50%',
@@ -196,7 +198,7 @@
                 loading="lazy"
                 class="img"
                 :style="{
-                  '--delay': '.7s',
+                  '--delay': '.5s',
                   left: '30%',
                   top: '7%',
                   width: '66%',
@@ -217,17 +219,17 @@
           <!-- body -->
           <div class="col-lg-6">
             <div class="content pe-xl-5">
-              <h3 class="sub-title mb-5">
+              <h3 class="font-subtitle mb-5">
                 03 Self Care
               </h3>
 
-              <div class="label mb-3">
+              <div class="font-label mb-3">
                 PERSONALISED
               </div>
-              <h2 class="title mb-4">
+              <h2 class="font-title mb-4">
                 Personalised insights uniquely calibrated to you.
               </h2>
-              <div class="desc">
+              <div class="font-desc">
                 <p class="mb-4">Backed by circadian science, our AI-driven algorithms  mesaure indexes and scores to help you understand your unique body and mind.  Through personalised insights, optimise your circadian health and readiness.</p>
                 <ul class="ps-3 mb-0 w-500">
                   <li class="py-1 ps-3">Personality profile that is unique to you</li>
@@ -255,7 +257,7 @@
                 loading="lazy"
                 class="img"
                 :style="{
-                  '--delay': '.5s',
+                  '--delay': '.3s',
                   left: '7%',
                   top: '15%',
                   width: '50%',
@@ -270,7 +272,7 @@
                 loading="lazy"
                 class="img"
                 :style="{
-                  '--delay': '.7s',
+                  '--delay': '.5s',
                   left: '30%',
                   top: '7%',
                   width: '66%',
@@ -285,13 +287,13 @@
           <!-- body -->
           <div class="col-lg-6">
             <div class="content">
-              <div class="label mb-3">
+              <div class="font-label mb-3">
                 ACTIONABLE
               </div>
-              <h2 class="title mb-4">
+              <h2 class="font-title mb-4">
                 Work towards a better you. Achievable tasks to help you change your life, bit by bit.
               </h2>
-              <div class="desc">
+              <div class="font-desc">
                 <p class="mb-4">Change can be daunting, we get it. With (app), getting started is easy. We guide you step-by-step, through actionable recommendations to help you accumulate sustainable atomic habits that improve your quality of life.</p>
                 <ul class="ps-3 w-500">
                   <li class="py-1 ps-3">Lifestyle behaviours optimisation based on sleep, activities and diet</li>
@@ -319,7 +321,7 @@
                 loading="lazy"
                 class="img"
                 :style="{
-                  '--delay': '.7s',
+                  '--delay': '.3s',
                   left: '10%',
                   top: '5%',
                   width: '65%',
@@ -382,52 +384,18 @@
   position: relative;
   z-index: 1;
 }
-.title{
-  font-size: 1.8rem;
-  font-weight: 500;
+
+.font-title{
   color: var(--color-1);
-  @media (min-width: @screen-lg) {
-    font-size: 2.4rem;
-  }
 }
-.sub-title{
-  font-size: 1.6rem;
-  font-weight: 500;
+.font-subtitle{
   color: var(--color-1);
-  @media (min-width: @screen-lg) {
-    font-size: 1.8rem;
-  }
 }
-.desc{
+.font-desc{
   color: var(--color-2);
 }
-.label{
-  font-size: 1rem;
-  font-weight: 400;
+.font-label{
   color: var(--color-3);
-  @media (min-width: @screen-lg) {
-    font-size: 1.2rem;
-  }
-}
-.img-wrap{
-  position: relative;
-  user-select: none;
-  padding-bottom: 100%;
-  .img{
-    position: absolute;
-    height: auto;
-    opacity: 0;
-    transition-property: transform, opacity;
-    transition-duration: .3s;
-  }
-  &.__in{
-    .img{
-      opacity: 1;
-      transform: translate(0) !important;
-      transition-duration: 1.3s, .5s;
-      transition-delay: var(--delay);
-    }
-  }
 }
 
 .bg-light{
