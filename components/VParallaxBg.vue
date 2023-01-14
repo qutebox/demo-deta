@@ -4,6 +4,8 @@ import { ref, onMounted, onUnmounted } from 'vue';
 const props = defineProps({
   src: { type: String, required: true },
   speed: { type: Number, default: 0.2 },
+  scrollHeight: { type: [Number, String], default: '150%' },
+  debug: { type: Boolean, default: false },
 });
 
 const $el = ref(null);
@@ -19,12 +21,14 @@ const isInView = (el) => {
 };
 
 const setParallaxPos = () => {
-  const parentHeight = $el.value.offsetHeight;
+  const rect = $el.value.getBoundingClientRect();
+  const parentHeight = rect.height;
   const parallaxHeight = $parallax.value.offsetHeight;
   const availableOffset = parallaxHeight - parentHeight;
   const direction = props.speed < 0 ? -1 : 1;
 
-  const animationValue = window.pageYOffset * Math.abs(props.speed);
+  // const animationValue = window.pageYOffset * Math.abs(props.speed);
+  const animationValue = (window.innerHeight - rect.top) * Math.abs(props.speed);
   if (animationValue <= availableOffset && animationValue >= 0) {
     $parallax.value.style.transform = `translateY(${animationValue * direction}px)`;
   }
@@ -53,6 +57,7 @@ onUnmounted(() => {
       ref="$parallax"
       class="v-parallax-scroll"
       :class="{ 'is-reverse': speed < 0 }"
+      :style="{ height: scrollHeight }"
     >
       <img
         :src="src"

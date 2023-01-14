@@ -5,7 +5,7 @@
       <div class="parallax-bg">
         <v-parallax-bg
           src="/images/businesses/slide-1.jpg"
-          :speed="0.2"
+          :speed="0.3"
         ></v-parallax-bg>
       </div>
 

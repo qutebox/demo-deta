@@ -11,7 +11,9 @@
         Get the most out of your life and work, everyday
       </div>
       <div class="scroll text-center">
-        <v-icon name="scroll" size="48"></v-icon>
+        <a href="#Description" :style="{ color: 'inherit' }">
+          <v-icon name="scroll" size="48"></v-icon>
+        </a>
       </div>
     </div>
   </div>

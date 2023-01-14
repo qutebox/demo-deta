@@ -5,8 +5,15 @@ defineProps({
 </script>
 
 <template>
-  <div id="Cta" class="section-cta" :style="{ backgroundImage: `url(${bg})` }">
-    <div class="container text-center">
+  <div id="Cta" class="section-cta">
+    <div class="parallax-bg">
+      <v-parallax-bg
+        :src="bg"
+        :speed="0.2"
+      ></v-parallax-bg>
+    </div>
+
+    <div class="container position-relative text-center">
       <h2 class="font-title my-5 pb-lg-3">
         Find out how Detalytics can help activate your best potential
       </h2>
@@ -26,10 +33,9 @@ defineProps({
 <style lang="less" scoped>
 .section-cta{
   position: relative;
-  padding: 6rem 0;
+  overflow: hidden;
+  padding: 5rem 0;
   background-color: #C3EBEF;
-  background-position: center;
-  background-size: cover;
   color: #fff;
 }
 
@@ -61,5 +67,14 @@ defineProps({
   &:hover{
     background-color: fade(#fff, 10%);
   }
+}
+
+.parallax-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
 }
 </style>
