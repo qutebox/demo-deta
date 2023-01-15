@@ -4,6 +4,7 @@
     <PricingSectionPriceTable />
     <PricingSectionWork />
     <PricingSectionLife />
+    <PricingSectionEnterprises />
     <PricingSectionFaq />
   </div>
 </template>

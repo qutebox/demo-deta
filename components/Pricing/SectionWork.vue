@@ -33,7 +33,7 @@ const [$slider] = useKeenSlider({
     <div class="container">
       <!-- top -->
       <div class="row gx-5 gy-4">
-        <div class="col-lg-6">
+        <div class="col-lg-6 py-lg-5">
           <div class="content py-5 pe-xl-5">
             <h2 class="font-heading mb-4">
               <div class="icon me-3">
