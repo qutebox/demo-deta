@@ -124,12 +124,12 @@ watch(route, () => {
             </ul>
           </li>
           <li>
-            <NuxtLink to="/">
+            <NuxtLink to="/pricing">
               Pricing
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/">
+            <NuxtLink to="/about">
               About
             </NuxtLink>
           </li>
