@@ -101,7 +101,7 @@
               :style="{
                 '--delay': '1.3s',
                 width: '66%',
-                left: '25%',
+                left: '18%',
                 top: '0%',
                 transform: 'translateY(2rem)',
               }"
