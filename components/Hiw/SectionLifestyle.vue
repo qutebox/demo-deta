@@ -10,8 +10,8 @@
       <div class="font-desc text-lg-center">
         Gain key personalised  insights into your body, mind and health with baseline assessments. From sleep, activities to diet, optimise your lifestyle behaviours and impact your goals.
       </div>
-      <div class="text-center mb-5">
-        <img src="/images/hiw/lifestyles.png" alt="Detalytics lifestyles" width="1205" height="938" loading="lazy" class="img">
+      <div class="img text-center">
+        <img src="/images/hiw/lifestyles-chart.png" alt="Detalytics lifestyles" width="1205" height="938" loading="lazy">
       </div>
     </div>
   </div>
@@ -43,10 +43,17 @@
   color: #2C335C;
 }
 .img{
-  width: 60rem;
-  height: auto;
-  max-width: 100%;
-  border-radius: 1.7rem;
-  box-shadow: 2rem 2.5rem 25px rgba(14, 90, 191, .2);
+  margin-left: -2rem;
+  margin-right: -2rem;
+  @media (min-width: @screen-lg) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  img{
+    width: 60rem;
+    height: auto;
+    max-width: 100%;
+    margin-right: -1rem;
+  }
 }
 </style>
