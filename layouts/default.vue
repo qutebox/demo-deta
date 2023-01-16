@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <LayoutsHeader />
-    <slot />
-    <LayoutsFooter />
-  </div>
+  <NuxtLoadingIndicator />
+  <LayoutsHeader />
+  <slot />
+  <LayoutsFooter />
 </template>
