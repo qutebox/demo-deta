@@ -33,6 +33,9 @@ Build the HTML pages for production:
 npm run generate
 ```
 
+And then you can now deploy `.output/public` to any static hosting!
+
+
 ## Production (with backend)
 
 Build the application for production:
