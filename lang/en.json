@@ -1,0 +1,154 @@
+{
+  "HEADER": {
+    "NAV": {
+      "HOW_IT_WORKS": "How it works",
+      "BUSINESSES": "For Businesses",
+      "BUSINESSES_SAFETY": "Safety Critical",
+      "BUSINESSES_CORPORATE": "Corporate Employers",
+      "BUSINESSES_INSURERS": "Insurers",
+      "BUSINESSES_HEALTHCARE": "Healthcare Providers",
+      "INDIVIDUALS": "For Individuals",
+      "INDIVIDUALS_PERFORMANCE": "Work Performance",
+      "INDIVIDUALS_SAFETY": "Workplace Safety",
+      "INDIVIDUALS_LIFE": "Life Lovers",
+      "PRICING": "Pricing",
+      "ABOUT": "About",
+      "ASSETMENT": "Get your assessment"
+    }
+  },
+  "FOOTER": {
+    "NAV": {
+      "WHY": "Why Detalytics?",
+      "PRICING": "Pricing",
+      "ABOUT": "About"
+    },
+    "BUSINESS": {
+      "TITLE": "For Businesses",
+      "DESC": "Better insights, better performance in...",
+      "P1": "Insurance brokers",
+      "P2": "Care Providers",
+      "P3": "Employers",
+      "P4": "Safety-critical industries"
+    },
+    "INDIVIDUAL": {
+      "TITLE": "For Individuals",
+      "DESC": "Achieve your best in...",
+      "P1": "Work performance",
+      "P2": "Work safety",
+      "P3": "Health & wellbeing"
+    },
+    "TOUCH": {
+      "TITLE": "Get in touch",
+      "DESC": "Want to find out more about our product?<br> Contact us at : _"
+    }
+  },
+  "FOOTER_CTA": {
+    "TITLE": "Find out how Detalytics can help activate your best potential",
+    "CTA": {
+      "DOWNLOAD": "Download the app",
+      "DEMO": "Get a demo"
+    }
+  },
+  "HOME": {
+    "HERO": {
+      "Activate": "Activate",
+      "GIF_TXT_1": "feeling your best in work and life",
+      "GIF_TXT_2": "a rejuvenated mind and body",
+      "GIF_TXT_3": "the satisfaction of peak performance",
+      "GIF_TXT_3": "the joy of travel",
+      "GIF_TXT_4": "the potential to always perform your best",
+      "GIF_TXT_5": "the ease of a balanced/optimised lifestyle",
+      "GIF_TXT_6": "a healthy body and mind",
+      "GIF_TXT_7": "the enjoyment of optimised learning",
+      "GIF_TXT_8": "your love for life",
+      "DESC": "With Detalytics, activate your best potential in work and life."
+    },
+    "ABOUT": {
+      "TITLE": "With (app), activate your best at work and life everyday, in every situation",
+      "BODY": "<p>Want to achieve your peak performance at work? Want to prevent burnout and improve your mental wellbeing? Stop anti early aging when you are young, or better manage your weight?</p><p>Through diving deep into your daily lifestyle behaviours and circadian rhythm patterns, gain key insights to your health and understand how to optimise your lifestyle effortlessly - to achieve all your goals.</p><p>With 42, develop a personalised action plan activate your best at work and life, whenever and wherever.</p>",
+      "CTA": "Find out more"
+    },
+    "USECASES": {
+      "LABEL": "USE CASES",
+      "TITLE": "Your all-in-one personalised (digital) coach empowering you to activate your optimal readiness for all important moments in your life.",
+      "BODY": "Your goals change by context, and (app) is the only app that contextually aligns to all your goals in life and work. <br>With (app), achieve a holistic wellbeing approach to empower your fullest potential in any situation",
+      "CTA": "Our Solutions",
+      "CASE_1_TITLE": "Work Performance",
+      "CASE_1_DESC": "Elevate your readiness and functional level, to perform your best & stay optimised at work",
+      "CASE_2_TITLE": "Mental Wellbeing",
+      "CASE_2_DESC": "Recover from fatigue, prevent burnout and feel rejuvenated in life - in your health, body and mind.",
+      "CASE_3_TITLE": "Travel",
+      "CASE_3_DESC": "Improve travel readiness, and reduce impacts due to jetlag or irregular work/travel schedules Make the most out of your schedule, and feel energised wherever you are.",
+      "CASE_4_TITLE": "Anti Early Aging",
+      "CASE_4_DESC": "Identify and adopt pre-emptive health behaviours. understand yourself better and Improve your quality of life. Understand your body better, and empower yourself to feel the best you can everyday.",
+      "CASE_5_TITLE": "Learning Improvement",
+      "CASE_5_DESC": "Unlock your learning potential, improve your brain function and optimise your mind. Think faster, improve memory, comprehend information better, and operate at a higher brain capacity."
+    },
+    "SOLUTION": {
+      "TITLE_GIF_1": "Sleep",
+      "TITLE_GIF_2": "Fitness",
+      "TITLE_GIF_3": "Diet",
+      "TITLE_TXT": "is not enough.",
+      "DESC": "<p>Sleep, fitness, diet - It’s all connected. Current health and wellbeing solutions only specialise in a core aspect, but the truth is, achieving mindful wellbeing requires a holistic approach.</p><p>With (app), we target all aspects of your lifestyle, mind and body, developing a holistic wellbeing approach to empower your fullest potential in any situation.</p>",
+      "CTA": "Our Solutions"
+    },
+    "DETA": {
+      "LABEL": "WITH DETALYTICS",
+      "TITLE": "Power your health, <br>power your mind.",
+      "DESC": "<p>(app) connects the dots/gaps between fitness, health, wellbeing and sleep, to provide a holistic evaluation of your lifestyle behaviours. With (app), encompass a holistic approach to your lifestyle.  Gain full clarity on your lifestyle patterns  and rest assured that you are always prepared to be at your best, at everyday and any moment.</p>",
+      "POINT_1_BOLD": "Context-ready to every scenario",
+      "POINT_1_TXT": "real-time purpose driven insights to optimise your readiness and stay hyper-focused",
+      "POINT_2_BOLD": "Holistic, step-by-step approach",
+      "POINT_2_TXT": "guided step-by-step approach to accumulate atomic habits that improve your quality of life"
+    },
+    "SCIENCE": {
+      "LABEL": "SCIENCE BACKED",
+      "TITLE": "Peak performance by design, backed by science",
+      "DESC": "<p>Backed by science, gain full clarity on your lifestyle patterns  and rest assured that you are always prepared to be at your best, at everyday and any moment. Designed by leading international experts with over 20 years of experience in the field of circadian science and performance readiness management. With (app), understand how your body and mind works. Gain key insights to your health and understand how to optimise your lifestyle effortlessly.</p>",
+      "POINT_1_BOLD": "Derived from your unique lifestyle behaviours",
+      "POINT_1_TXT": "Personalized action plan of derived from your lifestyle behaviors, circadian rhythms and metabolic statuses.",
+      "POINT_2_BOLD": "Performance by design, not chance",
+      "POINT_2_TXT": "Context-specific and personalised insights  to enable you to optimise life and work performance management"
+    },
+    "INDIVIDUAL": {
+      "LABEL": "FOR INDIVIDUALS",
+      "TITLE": "Understand yourself, and activate your potential in",
+      "TITLE_GIF_1": "Peak performance",
+      "TITLE_GIF_2": "Work safety",
+      "TITLE_GIF_3": "Shift recovery",
+      "TITLE_GIF_4": "Learning improvement",
+      "TITLE_GIF_5": "Healthy and mindful living",
+      "DESC": "<p>With 42, we target all aspects of your lifestyle, mind and body and develop a holistic wellbeing approach to empower your fullest potential in any situation. Define and align your goals  with (app), and discover what (app) can help you achieve with today.</p>",
+      "CTA": "Download the app"
+    },
+    "ENTERPRISE": {
+      "LABEL": "FOR ENTERPRISES",
+      "TITLE": "Activate your organisation’s potential today",
+      "DESC": "Activate & improve employee engagement, readiness and performance through <br class='d-none d-md-block'>work & life performance coaching plans, personalised for each employee",
+      "CARD_1": {
+        "LABEL": "FOR EMPLOYERS",
+        "TITLE": "Healthy employees, better businesses",
+        "DESC": "Activate & improve employee engagement, readiness and performance through work & life performance coaching plans, personalised for each employee.",
+        "CTA": "ENTERPRISES"
+      },
+      "CARD_2": {
+        "LABEL": "FOR CARE PROVIDERS",
+        "TITLE": "Better visibility, better insights, patient outcomes",
+        "DESC": "Beyond just biometrics and biomarkers, we enable longitudinal lifestyle analytics through evidence-based diagnostics.",
+        "CTA": "HOSPITALS"
+      },
+      "CARD_3": {
+        "LABEL": "FOR INSURERS",
+        "TITLE": "Identify and manage dynamic risk, for every individual",
+        "DESC": "Dynamic risk profiling for your clients, in identifying the degree of metabolic risk for your clients, and actionable insights for risk reduction.",
+        "CTA": "INSURERS"
+      },
+      "CARD_4": {
+        "LABEL": "FOR SAFETY CRITICAL INDUSTRIES",
+        "TITLE": "Improve workplace safety and resilience",
+        "DESC": "Mitigate workplace risks and improve workplace safety, through shifting risk-management from a reactive model to proactive model.",
+        "CTA": "AVIATION"
+      }
+    }
+  }
+}

@@ -71,71 +71,71 @@ watch(route, () => {
 
           <li>
             <NuxtLink to="/how-it-works">
-              How it works
+              {{ $t('HEADER.NAV.HOW_IT_WORKS') }}
             </NuxtLink>
           </li>
           <li class="child" :class="{ __active: childToggle === 'business' }">
             <a href="#" class="child-toggle" @click.prevent="onToggleChild('business')">
-              For Businesses <VIcon name="caret" />
+              {{ $t('HEADER.NAV.BUSINESSES') }} <VIcon name="caret" />
             </a>
             <ul class="child-nav">
               <li>
                 <NuxtLink to="/businesses/safety-critical">
-                  Safety Critical
+                  {{ $t('HEADER.NAV.BUSINESSES_SAFETY') }}
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/businesses/corporate-employers">
-                  Corporate Employers
+                  {{ $t('HEADER.NAV.BUSINESSES_CORPORATE') }}
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/businesses/insurers">
-                  Insurers
+                  {{ $t('HEADER.NAV.BUSINESSES_INSURERS') }}
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/businesses/healthcare-providers">
-                  Healthcare Providers
+                  {{ $t('HEADER.NAV.BUSINESSES_HEALTHCARE') }}
                 </NuxtLink>
               </li>
             </ul>
           </li>
           <li class="child" :class="{ __active: childToggle === 'individuals' }">
             <a href="#" class="child-toggle" @click.prevent="onToggleChild('individuals')">
-              For Individuals <VIcon name="caret" />
+              {{ $t('HEADER.NAV.INDIVIDUALS') }} <VIcon name="caret" />
             </a>
             <ul class="child-nav">
               <li>
                 <NuxtLink to="/individuals/work-performance">
-                  Work Performance
+                  {{ $t('HEADER.NAV.INDIVIDUALS_PERFORMANCE') }}
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/individuals/workplace-safety">
-                  Workplace Safety
+                  {{ $t('HEADER.NAV.INDIVIDUALS_SAFETY') }}
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/individuals/life-lovers">
-                  Life Lovers
+                  {{ $t('HEADER.NAV.INDIVIDUALS_LIFE') }}
                 </NuxtLink>
               </li>
             </ul>
           </li>
           <li>
             <NuxtLink to="/pricing">
-              Pricing
+              {{ $t('HEADER.NAV.PRICING') }}
             </NuxtLink>
           </li>
           <li>
             <NuxtLink to="/about">
-              About
+              {{ $t('HEADER.NAV.ABOUT') }}
             </NuxtLink>
           </li>
           <li class="mt-3 mt-lg-0 ms-lg-4">
             <a href="#" class="menu-btn" target="_blank">
-              Get your assessment
+              {{ $t('HEADER.NAV.ASSETMENT') }}
             </a>
           </li>
         </ul>

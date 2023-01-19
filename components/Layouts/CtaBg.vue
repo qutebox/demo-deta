@@ -15,15 +15,15 @@ defineProps({
 
     <div class="container position-relative text-center">
       <h2 class="font-title my-5 pb-lg-3">
-        Find out how Detalytics can help activate your best potential
+        {{ $t('FOOTER_CTA.TITLE') }}
       </h2>
 
       <div class="actions">
         <a href="#" class="btn btn-download my-2 my-lg-0 mx-sm-2 mx-lg-3" target="_blank" rel="noopener noreferrer">
-          Download the app
+          {{ $t('FOOTER_CTA.CTA.DOWNLOAD') }}
         </a>
         <a href="#" class="btn btn-demo my-2 my-lg-0 mx-sm-2 mx-lg-3" target="_blank">
-          Get a demo
+          {{ $t('FOOTER_CTA.CTA.DEMO') }}
         </a>
       </div>
     </div>

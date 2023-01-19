@@ -1,4 +1,17 @@
 <script setup>
+const { t } = useI18n();
+
+const gifTexts = [
+  t('HOME.HERO.GIF_TXT_1'),
+  t('HOME.HERO.GIF_TXT_2'),
+  t('HOME.HERO.GIF_TXT_3'),
+  t('HOME.HERO.GIF_TXT_4'),
+  t('HOME.HERO.GIF_TXT_5'),
+  t('HOME.HERO.GIF_TXT_6'),
+  t('HOME.HERO.GIF_TXT_7'),
+  t('HOME.HERO.GIF_TXT_8'),
+];
+
 const gallery = [
   {
     src: '/images/home/banner-1.jpg',
@@ -37,20 +50,10 @@ const onTextChanged = (newText) => {
 
     <div class="container text-center position-relative">
       <h1 class="font-heading mb-3">
-        Activate
+        {{ $t('HOME.HERO.Activate') }}
         <span class="d-block d-md-inline-block">
           <CompGifText
-            :text="[
-              'feeling your best in work and life',
-              'a rejuvenated mind and body',
-              'the satisfaction of peak performance',
-              'the joy of travel',
-              'the potential to always perform your best',
-              'the ease of a balanced/optimised lifestyle',
-              'a healthy body and mind',
-              'the enjoyment of optimised learning',
-              'your love for life',
-            ]"
+            :text="gifTexts"
             :speed="50"
             :clearSpeed="15"
             @changed="onTextChanged"
@@ -58,7 +61,7 @@ const onTextChanged = (newText) => {
         </span>
       </h1>
       <h2 class="font-desc">
-        With Detalytics, activate your best potential in work and life.
+        {{ $t('HOME.HERO.DESC') }}
       </h2>
     </div>
   </div>

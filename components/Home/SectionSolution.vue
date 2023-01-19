@@ -1,3 +1,13 @@
+<script setup>
+const { t } = useI18n();
+
+const gifTexts = [
+  t('HOME.SOLUTION.TITLE_GIF_1'),
+  t('HOME.SOLUTION.TITLE_GIF_2'),
+  t('HOME.SOLUTION.TITLE_GIF_3'),
+];
+</script>
+
 <template>
   <div id="Solution" class="section-solution">
     <div class="container position-relative">
@@ -13,24 +23,20 @@
             <h2 class="font-title mb-4">
               <span class="d-block">
                 <CompGifText
-                  :text="[
-                    'Sleep',
-                    'Fitness',
-                    'Diet',
-                  ]"
+                  :text="gifTexts"
                   :pause="2000"
                 />
               </span>
-              is not enough.
+              {{ $t('HOME.SOLUTION.TITLE_TXT') }}
             </h2>
-            <div class="font-desc">
-              <p class="mb-4">Sleep, fitness, diet - It’s all connected. Current health and wellbeing solutions only specialise in a core aspect, but the truth is, achieving mindful wellbeing requires a holistic approach.</p>
-              <p class="mb-4">With (app), we target all aspects of your lifestyle, mind and body, developing a holistic wellbeing approach to empower your fullest potential in any situation.</p>
-              <div class="mt-5">
-                <NuxtLink to="/" class="btn btn-cta">
-                  Our Solutions
-                </NuxtLink>
-              </div>
+            <div
+              class="font-desc"
+              v-html="$t('HOME.SOLUTION.DESC')"
+            ></div>
+            <div class="mt-5">
+              <NuxtLink to="/" class="btn btn-cta">
+                {{ $t('HOME.SOLUTION.CTA') }}
+              </NuxtLink>
             </div>
           </div>
         </div>
