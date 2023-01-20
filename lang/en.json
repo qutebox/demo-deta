@@ -150,5 +150,72 @@
         "CTA": "AVIATION"
       }
     }
+  },
+  "HIW": {
+    "HERO": {
+      "TITLE": "42 by Detalytics",
+      "DESC": "Scientifically proven and uniquely personalised, to enhance your work and life performance"
+    },
+    "WHY": {
+      "LABEL": "WHY DETALYTICS",
+      "TITLE": "What makes <br class='d-md-none'>Detalytics different",
+      "POINT_1": {
+        "NAME": "Context-driven",
+        "DESC": "Your important events in your life or work are always changing. We adapt and align actionable recommendations personalised to your goals and unique real-time context - to achieve optimal wellbeing for better health and work performance."
+      },
+      "POINT_2": {
+        "NAME": "Science, Not Myths",
+        "DESC": "What you do consistently everyday in your daily lifestyle has a direct impact on your overall wellbeing and work performance.   We dive deep into your daily lifestyle behaviours and circadian rhythm patterns to uncover research-based insights to help optimise your energy and readiness."
+      },
+      "POINT_3": {
+        "NAME": "Holistic",
+        "DESC": "The human body is a system. We analyse your historical, mental and physical health data and lifestyle behaviours, to create a holistic and connected mind and body approach to help you activate a consistent state of readiness."
+      }
+    },
+    "POINTS": {
+      "POINT_1": {
+        "LABEL": "SCIENTIFIC, RESEARCH-BASED APPROACH",
+        "TITLE": "Designed by leading international experts with over 20+ years of experience in the field of circadian science and performance readiness management",
+        "DESC": "Targeting just one aspect (sleep, fitness or diet) isn’t enough. With (app), we offer context-specific and personalised insights diving deep into your daily lifestyle behaviours and circadian rhythm patterns. Through a gold-standard science-backed approach supported by a panel of renounced specialists, in the field of medicine, high-performance , our app provides gold-standard insights for you to gain full clarity on your lifestyle patterns and personalised approach in life and work performance management."
+      },
+      "POINT_2": {
+        "LABEL": "CONTEXT-DRIVEN TO YOUR LIFESTYLE",
+        "TITLE": "We demystify health and wellbeing into actionable and context-driven insights that are unique to your lifestyle",
+        "DESC": "With 42, gain full clarity on your lifestyle patterns  and be guided on what to do at each step of your life journey. Our app provides gold-standard insights for you to gain full clarity on your lifestyle patterns and personalised approach in life and work performance management. We analyze metrics already proven by science and connect the dots between those metrics, your lifestyle behaviours, and its impact on your physical and mental performance."
+      }
+    },
+    "LIFESTYLE": {
+      "LABEL": "YOUR JOURNEY WITH DETALYTICS",
+      "TITLE": "Evidence-based life and work transformation in every aspect of your lifestyle",
+      "DESC": "Gain key personalised  insights into your body, mind and health with baseline assessments. From sleep, activities to diet, optimise your lifestyle behaviours and impact your goals."
+    },
+    "STEPS": {
+      "LABEL": "HOW IT WORKS",
+      "TITLE": "It’s all about you.",
+      "STEP_1": {
+        "NAME": "01 Select Your Personal Goal",
+        "LABEL": "CONTEXT-DRIVEN",
+        "TITLE": "Only what’s relevant to you. Select your goal and get a curated experience.",
+        "DESC": "<p>From health, learning management to fatigue management and early anti-ageing, pick the goal that best aligns with your current context.  Choose from work, quality of life, to travel and financial wellbeing goals. Based on your lifestyle behaviours, receive a personalised action plan aligned to your goals and real-time context.</p><p class='mb-2'><b>Set curated goals in body and brain health, such as:</b></p><ul><li>Long term Peak Performance</li><li>Physical &  Mental Resilience</li><li>Optimized Travel Wellbeing</li><li>Advanced Financial Management</li></ul>"
+      },
+      "STEP_2": {
+        "NAME": "02 Assessments and Analytics",
+        "LABEL_1": "HOLISTIC",
+        "TITLE_1": "Understand everything that makes you tick. Gain actionable insights personalised to your goals and lifestyle.",
+        "DESC_1": "<p>Through medical-backed assessments designed to capture the interconnected factors of your body and mind, understand your lifestyle patterns and it’s holistic impact on your body and mind.</p><ul><li>Explore baseline assessments from physiological, cognitive to lifestyle</li><li>Understand factors that influence your daily readiness such as your metabolic and cognitive health, diet risk, lifestyle performance</li><li>Receive a personal score and how you fare against historical and demographical profiling</li></ul>",
+        "LABEL_2": "DYNAMIC",
+        "TITLE_2": "A different you everyday. Dynamically updates, predicts and recommends according to your changing body and mind.",
+        "DESC_2": "<p>Based on your lifestyle behaviours, receive a personalised action plan aligned to your selected goals and lifestyle context. Gain full clarity on your lifestyle patterns, and it’s connected impact on your physical and mental performance.</p><ul class='w-500'><li>Receive daily lifestyle optimization recommendations on how you can improve your lifestyle behaviours</li><li>Learn how to manage fatigue, jetlag and improve your personal score</li></ul>"
+      },
+      "STEP_3": {
+        "NAME": "03 Self Care",
+        "LABEL_1": "PERSONALISED",
+        "TITLE_1": "Personalised insights uniquely calibrated to you.",
+        "DESC_1": "<p>Backed by circadian science, our AI-driven algorithms  mesaure indexes and scores to help you understand your unique body and mind.  Through personalised insights, optimise your circadian health and readiness.</p><ul class='w-500'><li>Personality profile that is unique to you</li><li>Based on your  baseline assessments, receive personalised insights on circadian disruption, cognitive health and lifestyle performance etc</li></ul>",
+        "LABEL_2": "ACTIONABLE",
+        "TITLE_2": "Work towards a better you. Achievable tasks to help you change your life, bit by bit.",
+        "DESC_2": "<p>Change can be daunting, we get it. With (app), getting started is easy. We guide you step-by-step, through actionable recommendations to help you accumulate sustainable atomic habits that improve your quality of life.</p><ul class='w-500'><li>Lifestyle behaviours optimisation based on sleep, activities and diet</li><li>Understand how changing your lifestyle behaviours enhances your selected goals - in burnout prevention, learning improvement etc</li></ul>"
+      }
+    }
   }
 }
