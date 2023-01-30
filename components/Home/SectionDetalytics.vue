@@ -10,25 +10,26 @@
         <div class="col-lg-6">
           <div class="pe-xl-5">
             <h5 class="font-label mb-3">
-              WITH DETALYTICS
+              {{ $t('HOME.DETA.LABEL') }}
             </h5>
-            <h2 class="font-title mb-4">
-              Power your health, <br>power your mind.
-            </h2>
+            <h2
+              v-html="$t('HOME.DETA.TITLE')"
+              class="font-title mb-4"
+            ></h2>
             <div class="font-desc">
-              <p class="mb-4">(app) connects the dots/gaps between fitness, health, wellbeing and sleep, to provide a holistic evaluation of your lifestyle behaviours. With (app), encompass a holistic approach to your lifestyle.  Gain full clarity on your lifestyle patterns  and rest assured that you are always prepared to be at your best, at everyday and any moment.</p>
+              <div v-html="$t('HOME.DETA.DESC')"></div>
 
               <div class="point">
                 <div class="point-ic me-3">
                   <v-icon name="trophy" size="25"></v-icon>
                 </div>
-                <span><b>Context-ready to every scenario</b> - real-time purpose driven insights to optimise your readiness and stay hyper-focused</span>
+                <span><b>{{ $t('HOME.DETA.POINT_1_BOLD') }}</b> - {{ $t('HOME.DETA.POINT_1_TXT') }}</span>
               </div>
               <div class="point">
                 <div class="point-ic me-3">
                   <v-icon name="steps" size="25"></v-icon>
                 </div>
-                <span><b>Holistic, step-by-step approach</b> - guided step-by-step approach to accumulate atomic habits that improve your quality of life </span>
+                <span><b>{{ $t('HOME.DETA.POINT_2_BOLD') }}</b> - {{ $t('HOME.DETA.POINT_2_TXT') }}</span>
               </div>
             </div>
           </div>

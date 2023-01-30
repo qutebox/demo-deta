@@ -7,14 +7,15 @@
           <div class="col-lg-7">
             <div class="pe-xl-4">
               <h5 class="font-label mb-3">
-                SCIENTIFIC, RESEARCH-BASED APPROACH
+                {{ $t('HIW.POINTS.POINT_1.LABEL') }}
               </h5>
               <h2 class="font-title mb-4">
-                Designed by leading international experts with over 20+ years of experience in the field of circadian science and performance readiness management
+                {{ $t('HIW.POINTS.POINT_1.TITLE') }}
               </h2>
-              <p class="font-desc">
-                Targeting just one aspect (sleep, fitness or diet) isn’t enough. With (app), we offer context-specific and personalised insights diving deep into your daily lifestyle behaviours and circadian rhythm patterns. Through a gold-standard science-backed approach supported by a panel of renounced specialists, in the field of medicine, high-performance , our app provides gold-standard insights for you to gain full clarity on your lifestyle patterns and personalised approach in life and work performance management.
-              </p>
+              <p
+                v-html="$t('HIW.POINTS.POINT_1.DESC')"
+                class="font-desc"
+              ></p>
             </div>
           </div>
 
@@ -34,14 +35,15 @@
           <div class="col-lg-7">
             <div class="ps-xl-5">
               <h5 class="font-label mb-3">
-                CONTEXT-DRIVEN TO YOUR LIFESTYLE.
+                {{ $t('HIW.POINTS.POINT_2.LABEL') }}
               </h5>
               <h2 class="font-title mb-4">
-                We demystify health and wellbeing into actionable and context-driven insights that are unique to your lifestyle
+                {{ $t('HIW.POINTS.POINT_2.TITLE') }}
               </h2>
-              <p class="font-desc">
-                With 42, gain full clarity on your lifestyle patterns  and be guided on what to do at each step of your life journey. Our app provides gold-standard insights for you to gain full clarity on your lifestyle patterns and personalised approach in life and work performance management. We analyze metrics already proven by science and connect the dots between those metrics, your lifestyle behaviours, and its impact on your physical and mental performance.
-              </p>
+              <p
+                v-html="$t('HIW.POINTS.POINT_2.DESC')"
+                class="font-desc"
+              ></p>
             </div>
           </div>
 

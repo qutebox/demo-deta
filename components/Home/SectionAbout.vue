@@ -10,17 +10,16 @@
         <div class="col-lg-6">
           <div class="pe-xl-5">
             <h2 class="font-title mb-4">
-              With (app), activate your best at work and life everyday, in every situation
+              {{ $t('HOME.ABOUT.TITLE') }}
             </h2>
-            <div class="font-desc">
-              <p class="mb-4">Want to achieve your peak performance at work? Want to prevent burnout and improve your mental wellbeing? Stop anti early aging when you are young, or better manage your weight?</p>
-              <p class="mb-4">Through diving deep into your daily lifestyle behaviours and circadian rhythm patterns, gain key insights to your health and understand how to optimise your lifestyle effortlessly - to achieve all your goals.</p>
-              <p class="mb-4">With 42, develop a personalised action plan activate your best at work and life, whenever and wherever.</p>
-              <div class="mt-5">
-                <NuxtLink to="/" class="btn btn-cta">
-                  Find out more
-                </NuxtLink>
-              </div>
+            <div
+              v-html="$t('HOME.ABOUT.BODY')"
+              class="font-desc"
+            ></div>
+            <div class="mt-5">
+              <NuxtLink to="/" class="btn btn-cta">
+                {{ $t('HOME.ABOUT.CTA') }}
+              </NuxtLink>
             </div>
           </div>
         </div>

@@ -5,18 +5,18 @@
         <!-- column#links -->
         <div class="col-6 col-lg-3 order-lg-last">
           <div class="mb-4 pb-2">
-            <NuxtLink to="/" class="link">
-              Why Detalytics?
+            <NuxtLink to="/how-it-works/" class="link-1">
+              {{ $t('FOOTER.NAV.WHY') }}
             </NuxtLink>
           </div>
           <div class="mb-4 pb-2">
-            <NuxtLink to="/" class="link">
-              Pricing
+            <NuxtLink to="/pricing/" class="link-1">
+              {{ $t('FOOTER.NAV.PRICING') }}
             </NuxtLink>
           </div>
           <div class="mb-4 pb-2">
-            <NuxtLink to="/" class="link">
-              About
+            <NuxtLink to="/" class="link-1">
+              {{ $t('FOOTER.NAV.ABOUT') }}
             </NuxtLink>
           </div>
         </div>
@@ -24,27 +24,55 @@
         <!-- column#text -->
         <div class="col-6 col-lg-3">
           <div class="label">
-            For Businesses
+            {{ $t('FOOTER.BUSINESS.TITLE') }}
           </div>
           <div class="txt">
-            <p class="mb-1">Better insights, better performance in...</p>
+            <p class="mb-1">{{ $t('FOOTER.BUSINESS.DESC') }}</p>
             <ul class="mb-1 ps-3">
-              <li>Insurance brokers</li>
-              <li>Care Providers</li>
-              <li>Employers</li>
-              <li>Safety-critical industries</li>
+              <li>
+                <NuxtLink to="/businesses/safety-critical/" class="link-2">
+                  {{ $t('FOOTER.BUSINESS.P1') }}
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/businesses/corporate-employers/" class="link-2">
+                  {{ $t('FOOTER.BUSINESS.P2') }}
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/businesses/insurers/" class="link-2">
+                  {{ $t('FOOTER.BUSINESS.P3') }}
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/businesses/healthcare-providers/" class="link-2">
+                  {{ $t('FOOTER.BUSINESS.P4') }}
+                </NuxtLink>
+              </li>
             </ul>
           </div>
 
           <div class="mt-3 label">
-            For Individuals
+            {{ $t('FOOTER.INDIVIDUAL.TITLE') }}
           </div>
           <div class="txt">
-            <p class="mb-1">Achieve your best in...</p>
+            <p class="mb-1">{{ $t('FOOTER.INDIVIDUAL.DESC') }}</p>
             <ul class="mb-1 ps-3">
-              <li>Work performance</li>
-              <li>Work safety</li>
-              <li>Health & wellbeing</li>
+              <li>
+                <NuxtLink to="/individuals/work-performance/" class="link-2">
+                  {{ $t('FOOTER.INDIVIDUAL.P1') }}
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/individuals/workplace-safety/" class="link-2">
+                  {{ $t('FOOTER.INDIVIDUAL.P2') }}
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/individuals/life-lovers/" class="link-2">
+                  {{ $t('FOOTER.INDIVIDUAL.P3') }}
+                </NuxtLink>
+              </li>
             </ul>
           </div>
         </div>
@@ -63,11 +91,12 @@
             </NuxtLink>
           </div>
           <h4 class="in-touch-title">
-            Get in touch
+            {{ $t('FOOTER.TOUCH.TITLE') }}
           </h4>
-          <div class="in-touch-desc">
-            Want to find out more about our product?<br> Contact us at : _
-          </div>
+          <div
+            v-html="$t('FOOTER.TOUCH.DESC')"
+            class="in-touch-desc"
+          ></div>
           <div class="in-touch-socials mb-3 mb-lg-0">
             <a href="#" class="me-3" title="LinkedIn" target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" width="24" height="24">
@@ -127,9 +156,17 @@
     color: #3CA9B4;
     font-size: .7rem;
   }
-  .link{
+  .link-1{
     font-size: .85rem;
     font-weight: 700;
+    text-decoration: none;
+    color: #439CA5;
+    &:hover{
+      color: lighten(#439CA5, 10%);
+    }
+  }
+  .link-2{
+    font-size: .7rem;
     text-decoration: none;
     color: #439CA5;
     &:hover{

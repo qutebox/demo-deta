@@ -24,4 +24,7 @@ module.exports = {
     'vue/no-v-html': 'off',
     camelcase: 'off',
   },
+  globals: {
+    useI18n: 'readonly',
+  },
 };

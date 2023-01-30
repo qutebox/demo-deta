@@ -6,36 +6,30 @@
         <!-- heading -->
         <div class="heading">
           <h5 class="font-label text-center mb-2" :style="{ opacity: .7 }">
-            HOW IT WORKS
+            {{ $t('HIW.STEPS.LABEL') }}
           </h5>
           <h2 class="font-title text-center mb-5 pb-3">
-            It’s all about you.
+            {{ $t('HIW.STEPS.TITLE') }}
           </h2>
         </div>
 
-        <h3 class="font-subtitle mb-4 position-relative" :style="{ zIndex: 1 }">
-          01 Select Your Personal Goal
+        <h3 class="font-subtitle mb-4 content">
+          {{ $t('HIW.STEPS.STEP_1.NAME') }}
         </h3>
         <div class="row align-items-center g-5">
           <!-- body -->
           <div class="col-lg-6">
             <div class="content ps-xl-4">
               <div class="font-label mb-3">
-                CONTEXT-DRIVEN
+                {{ $t('HIW.STEPS.STEP_1.LABEL') }}
               </div>
               <h2 class="font-title mb-4">
-                Only what’s relevant to you. Select your goal and get a curated experience.
+                {{ $t('HIW.STEPS.STEP_1.TITLE') }}
               </h2>
-              <div class="font-desc">
-                <p class="mb-4">From health, learning management to fatigue management and early anti-ageing, pick the goal that best aligns with your current context.  Choose from work, quality of life, to travel and financial wellbeing goals. Based on your lifestyle behaviours, receive a personalised action plan aligned to your goals and real-time context.</p>
-                <p class="mb-2"><b>Set curated goals in body and brain health, such as:</b></p>
-                <ul class="ps-3">
-                  <li class="py-1 ps-3">Long term Peak Performance</li>
-                  <li class="py-1 ps-3">Physical &  Mental Resilience</li>
-                  <li class="py-1 ps-3">Optimized Travel Wellbeing</li>
-                  <li class="py-1 ps-3">Advanced Financial Management</li>
-                </ul>
-              </div>
+              <div
+                v-html="$t('HIW.STEPS.STEP_1.DESC')"
+                class="font-desc"
+              ></div>
             </div>
           </div>
           <!-- cover -->
@@ -79,23 +73,19 @@
           <div class="col-lg-6">
             <div class="content">
               <h3 class="font-subtitle mb-5">
-                02 Assessments and Analytics
+                {{ $t('HIW.STEPS.STEP_2.NAME') }}
               </h3>
 
               <div class="font-label mb-3">
-                HOLISTIC
+                {{ $t('HIW.STEPS.STEP_2.LABEL_1') }}
               </div>
               <h2 class="font-title mb-4">
-                Understand everything that makes you tick. Gain actionable insights personalised to your goals and lifestyle.
+                {{ $t('HIW.STEPS.STEP_2.TITLE_1') }}
               </h2>
-              <div class="font-desc">
-                <p class="mb-4">Through medical-backed assessments designed to capture the interconnected factors of your body and mind, understand your lifestyle patterns and it’s holistic impact on your body and mind.</p>
-                <ul class="ps-3">
-                  <li class="py-1 ps-3">Explore baseline assessments from physiological, cognitive to lifestyle</li>
-                  <li class="py-1 ps-3">Understand factors that influence your daily readiness such as your metabolic and cognitive health, diet risk, lifestyle performance</li>
-                  <li class="py-1 ps-3">Receive a personal score and how you fare against historical and demographical profiling</li>
-                </ul>
-              </div>
+              <div
+                v-html="$t('HIW.STEPS.STEP_2.DESC_1')"
+                class="font-desc"
+              ></div>
             </div>
           </div>
           <!-- cover -->
@@ -150,18 +140,15 @@
           <div class="col-lg-6">
             <div class="content">
               <div class="font-label mb-3">
-                DYNAMIC
+                {{ $t('HIW.STEPS.STEP_2.LABEL_2') }}
               </div>
               <h2 class="font-title mb-4">
-                A different you everyday. Dynamically updates, predicts and recommends according to your changing body and mind.
+                {{ $t('HIW.STEPS.STEP_2.TITLE_2') }}
               </h2>
-              <div class="font-desc">
-                <p class="mb-4">Based on your lifestyle behaviours, receive a personalised action plan aligned to your selected goals and lifestyle context. Gain full clarity on your lifestyle patterns, and it’s connected impact on your physical and mental performance.</p>
-                <ul class="ps-3 w-500">
-                  <li class="py-1 ps-3">Receive daily lifestyle optimization recommendations on how you can improve your lifestyle behaviours</li>
-                  <li class="py-1 ps-3">Learn how to manage fatigue, jetlag and improve your personal score</li>
-                </ul>
-              </div>
+              <div
+                v-html="$t('HIW.STEPS.STEP_2.DESC_2')"
+                class="font-desc"
+              ></div>
             </div>
           </div>
           <!-- cover -->
@@ -220,22 +207,19 @@
           <div class="col-lg-6">
             <div class="content pe-xl-5">
               <h3 class="font-subtitle mb-5">
-                03 Self Care
+                {{ $t('HIW.STEPS.STEP_3.NAME') }}
               </h3>
 
               <div class="font-label mb-3">
-                PERSONALISED
+                {{ $t('HIW.STEPS.STEP_3.LABEL_1') }}
               </div>
               <h2 class="font-title mb-4">
-                Personalised insights uniquely calibrated to you.
+                {{ $t('HIW.STEPS.STEP_3.TITLE_1') }}
               </h2>
-              <div class="font-desc">
-                <p class="mb-4">Backed by circadian science, our AI-driven algorithms  mesaure indexes and scores to help you understand your unique body and mind.  Through personalised insights, optimise your circadian health and readiness.</p>
-                <ul class="ps-3 mb-0 w-500">
-                  <li class="py-1 ps-3">Personality profile that is unique to you</li>
-                  <li class="py-1 ps-3">Based on your  baseline assessments, receive personalised insights on circadian disruption, cognitive health and lifestyle performance etc</li>
-                </ul>
-              </div>
+              <div
+                v-html="$t('HIW.STEPS.STEP_3.DESC_1')"
+                class="font-desc"
+              ></div>
             </div>
           </div>
           <!-- cover -->
@@ -288,18 +272,15 @@
           <div class="col-lg-6">
             <div class="content">
               <div class="font-label mb-3">
-                ACTIONABLE
+                {{ $t('HIW.STEPS.STEP_3.LABEL_2') }}
               </div>
               <h2 class="font-title mb-4">
-                Work towards a better you. Achievable tasks to help you change your life, bit by bit.
+                {{ $t('HIW.STEPS.STEP_3.TITLE_2') }}
               </h2>
-              <div class="font-desc">
-                <p class="mb-4">Change can be daunting, we get it. With (app), getting started is easy. We guide you step-by-step, through actionable recommendations to help you accumulate sustainable atomic habits that improve your quality of life.</p>
-                <ul class="ps-3 w-500">
-                  <li class="py-1 ps-3">Lifestyle behaviours optimisation based on sleep, activities and diet</li>
-                  <li class="py-1 ps-3">Understand how changing your lifestyle behaviours enhances your selected goals - in burnout prevention, learning improvement etc</li>
-                </ul>
-              </div>
+              <div
+                v-html="$t('HIW.STEPS.STEP_3.DESC_2')"
+                class="font-desc"
+              ></div>
             </div>
           </div>
           <!-- cover -->
@@ -393,6 +374,12 @@
 }
 .font-desc{
   color: var(--color-2);
+  :deep(ul){
+    padding-left: 1.5rem;
+    li{
+      padding: .25rem 0 .25rem 1rem;
+    }
+  }
 }
 .font-label{
   color: var(--color-3);

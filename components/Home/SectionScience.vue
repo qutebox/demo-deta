@@ -11,25 +11,25 @@
         <div class="col-lg-6">
           <div class="ps-xl-5">
             <h5 class="font-label mb-3">
-              SCIENCE BACKED
+              {{ $t('HOME.SCIENCE.LABEL') }}
             </h5>
             <h2 class="font-title mb-4">
-              Peak performance by design, backed by science
+              {{ $t('HOME.SCIENCE.TITLE') }}
             </h2>
             <div class="font-desc">
-              <p class="mb-4">Backed by science, gain full clarity on your lifestyle patterns  and rest assured that you are always prepared to be at your best, at everyday and any moment. Designed by leading international experts with over 20 years of experience in the field of circadian science and performance readiness management. With (app), understand how your body and mind works. Gain key insights to your health and understand how to optimise your lifestyle effortlessly.</p>
+              <div v-html="$t('HOME.SCIENCE.DESC')"></div>
 
               <div class="point">
                 <div class="point-ic me-3">
                   <v-icon name="person" size="25"></v-icon>
                 </div>
-                <span><b>Derived from your unique lifestyle behaviours</b> - Personalized action plan of derived from your lifestyle behaviors, circadian rhythms and metabolic statuses.</span>
+                <span><b>{{ $t('HOME.SCIENCE.POINT_1_BOLD') }}</b> - {{ $t('HOME.SCIENCE.POINT_1_TXT') }}</span>
               </div>
               <div class="point">
                 <div class="point-ic me-3">
                   <v-icon name="bars" size="25"></v-icon>
                 </div>
-                <span><b>Performance by design, not chance</b> - context-specific and personalised insights  to enable you to optimise life and work performance management</span>
+                <span><b>{{ $t('HOME.SCIENCE.POINT_2_BOLD') }}</b> - {{ $t('HOME.SCIENCE.POINT_2_TXT') }}</span>
               </div>
             </div>
           </div>

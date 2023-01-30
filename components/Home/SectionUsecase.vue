@@ -1,28 +1,30 @@
 <script setup>
+const { t } = useI18n();
+
 const cards = [
   {
-    title: 'Work Performance',
-    desc: 'Elevate your readiness and functional level, to perform your best & stay optimised at work',
+    title: t('HOME.USECASES.CASE_1_TITLE'),
+    desc: t('HOME.USECASES.CASE_1_DESC'),
     img: '/images/home/card-1.png',
   },
   {
-    title: 'Mental Wellbeing',
-    desc: 'Recover from fatigue, prevent burnout and feel rejuvenated in life - in your health, body and mind.',
+    title: t('HOME.USECASES.CASE_2_TITLE'),
+    desc: t('HOME.USECASES.CASE_2_DESC'),
     img: '/images/home/card-2.png',
   },
   {
-    title: 'Travel',
-    desc: 'Improve travel readiness, and reduce impacts due to jetlag or irregular work/travel schedules Make the most out of your schedule, and feel energised wherever you are.',
+    title: t('HOME.USECASES.CASE_3_TITLE'),
+    desc: t('HOME.USECASES.CASE_3_DESC'),
     img: '/images/home/card-3.png',
   },
   {
-    title: 'Anti Early Aging',
-    desc: 'Identify and adopt pre-emptive health behaviours. understand yourself better and Improve your quality of life. Understand your body better, and empower yourself to feel the best you can everyday.',
+    title: t('HOME.USECASES.CASE_4_TITLE'),
+    desc: t('HOME.USECASES.CASE_4_DESC'),
     img: '/images/home/card-4.png',
   },
   {
-    title: 'Learning Improvement',
-    desc: 'Unlock your learning potential, improve your brain function and optimise your mind. Think faster, improve memory, comprehend information better, and operate at a higher brain capacity.',
+    title: t('HOME.USECASES.CASE_5_TITLE'),
+    desc: t('HOME.USECASES.CASE_5_DESC'),
     img: '/images/home/card-5.png',
   },
 ];
@@ -32,14 +34,15 @@ const cards = [
   <div id="Usecase" class="section-usecase">
     <div class="container">
       <h4 class="font-label mb-3 text-lg-center">
-        USE CASES
+        {{ $t('HOME.USECASES.LABEL') }}
       </h4>
       <h2 class="font-subtitle mb-4 text-lg-center">
-        Your all-in-one personalised (digital) coach empowering you to activate your optimal readiness for all important moments in your life.
+        {{ $t('HOME.USECASES.TITLE') }}
       </h2>
-      <div class="font-desc text-lg-center">
-        Your goals change by context, and (app) is the only app that contextually aligns to all your goals in life and work. <br>With (app), achieve a holistic wellbeing approach to empower your fullest potential in any situation
-      </div>
+      <div
+        v-html="$t('HOME.USECASES.BODY')"
+        class="font-desc text-lg-center"
+      ></div>
 
       <div class="row g-4 justify-content-center my-5 pt-lg-4">
         <div
@@ -73,7 +76,7 @@ const cards = [
 
       <div class="text-center">
         <NuxtLink to="/" class="btn btn-cta">
-          Our Solutions
+          {{ $t('HOME.USECASES.CTA') }}
         </NuxtLink>
       </div>
     </div>

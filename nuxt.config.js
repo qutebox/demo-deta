@@ -25,6 +25,9 @@ export default defineNuxtConfig({
   css: [
     '@/assets/less/app.less',
   ],
+  modules: [
+    '@nuxtjs/i18n',
+  ],
   webpack: {
     extractCSS: true,
   },
@@ -35,6 +38,19 @@ export default defineNuxtConfig({
           additionalData: '@import "@/assets/less/vars.less";',
         },
       },
+    },
+  },
+  // *not support .js file
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en.json' },
+    ],
+    defaultLocale: 'en',
+    lazy: true,
+    langDir: 'lang/',
+    strategy: 'prefix_except_default',
+    vueI18n: {
+      fallbackLocale: 'en',
     },
   },
 });

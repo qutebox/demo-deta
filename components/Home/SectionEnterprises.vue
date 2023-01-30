@@ -2,41 +2,43 @@
 import { ref } from 'vue';
 import { useKeenSlider } from 'keen-slider/vue';
 
+const { t } = useI18n();
+
 // static vars
 const cards = [
   {
-    label: 'FOR EMPLOYERS',
-    title: 'Healthy employees, better businesses',
-    desc: 'Activate & improve employee engagement, readiness and performance through work & life performance coaching plans, personalised for each employee.',
+    label: t('HOME.ENTERPRISE.CARD_1.LABEL'),
+    title: t('HOME.ENTERPRISE.CARD_1.TITLE'),
+    desc: t('HOME.ENTERPRISE.CARD_1.DESC'),
+    cta: t('HOME.ENTERPRISE.CARD_1.CTA'),
     cover: '/images/home/slider-1.png',
-    cta: 'ENTERPRISES',
     cta_link: '/',
     classes: 'slider-item-enterprises',
   },
   {
-    label: 'FOR CARE PROVIDERS',
-    title: 'Better visibility, better insights, patient outcomes.',
-    desc: 'Beyond just biometrics and biomarkers, we enable longitudinal lifestyle analytics through evidence-based diagnostics.',
+    label: t('HOME.ENTERPRISE.CARD_2.LABEL'),
+    title: t('HOME.ENTERPRISE.CARD_2.TITLE'),
+    desc: t('HOME.ENTERPRISE.CARD_2.DESC'),
+    cta: t('HOME.ENTERPRISE.CARD_2.CTA'),
     cover: '/images/home/slider-2.png',
-    cta: 'HOSPITALS',
     cta_link: '/',
     classes: 'slider-item-hospitals',
   },
   {
-    label: 'FOR INSURERS',
-    title: 'Identify and manage dynamic risk, for every individual',
-    desc: 'Dynamic risk profiling for your clients, in identifying the degree of metabolic risk for your clients, and actionable insights for risk reduction.',
+    label: t('HOME.ENTERPRISE.CARD_3.LABEL'),
+    title: t('HOME.ENTERPRISE.CARD_3.TITLE'),
+    desc: t('HOME.ENTERPRISE.CARD_3.DESC'),
+    cta: t('HOME.ENTERPRISE.CARD_3.CTA'),
     cover: '/images/home/slider-3.png',
-    cta: 'INSURERS',
     cta_link: '/',
     classes: 'slider-item-insurers',
   },
   {
-    label: 'FOR SAFETY CRITICAL INDUSTRIES',
-    title: 'Improve workplace safety and resilience',
-    desc: 'Mitigate workplace risks and improve workplace safety, through shifting risk-management from a reactive model to proactive model.',
+    label: t('HOME.ENTERPRISE.CARD_4.LABEL'),
+    title: t('HOME.ENTERPRISE.CARD_4.TITLE'),
+    desc: t('HOME.ENTERPRISE.CARD_4.DESC'),
+    cta: t('HOME.ENTERPRISE.CARD_4.CTA'),
     cover: '/images/home/slider-4.png',
-    cta: 'AVIATION',
     cta_link: '/',
     classes: 'slider-item-safety',
   },
@@ -63,13 +65,13 @@ const [$slider, slider] = useKeenSlider({
 
       <div class="position-relative">
         <h5 class="font-label mb-3 text-lg-center">
-          FOR ENTERPRISES
+          {{ $t('HOME.ENTERPRISE.LABEL') }}
         </h5>
         <h2 class="font-title mb-4 text-lg-center">
-          Activate your organisation’s potential today
+          {{ $t('HOME.ENTERPRISE.TITLE') }}
         </h2>
         <div class="font-desc text-lg-center">
-          Activate & improve employee engagement, readiness and performance through <br class="d-none d-md-block">work & life performance coaching plans, personalised for each employee
+          <div v-html="$t('HOME.ENTERPRISE.DESC')"></div>
         </div>
 
         <div class="row g-0 justify-content-center my-5">

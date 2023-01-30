@@ -1,18 +1,20 @@
 <script setup>
+const { t } = useI18n();
+
 const points = [
   {
-    title: 'Context-driven',
-    desc: 'Your important events in your life or work are always changing. We adapt and align actionable recommendations personalised to your goals and unique real-time context - to achieve optimal wellbeing for better health and work performance.',
+    title: t('HIW.WHY.POINT_1.NAME'),
+    desc: t('HIW.WHY.POINT_1.DESC'),
     icon: 'trophy',
   },
   {
-    title: 'Science, Not Myths',
-    desc: 'What you do consistently everyday in your daily lifestyle has a direct impact on your overall wellbeing and work performance.   We dive deep into your daily lifestyle behaviours and circadian rhythm patterns to uncover research-based insights to help optimise your energy and readiness.',
+    title: t('HIW.WHY.POINT_2.NAME'),
+    desc: t('HIW.WHY.POINT_2.DESC'),
     icon: 'trophy',
   },
   {
-    title: 'Holistic',
-    desc: 'The human body is a system. We analyse your historical, mental and physical health data and lifestyle behaviours, to create a holistic and connected mind and body approach to help you activate a consistent state of readiness.',
+    title: t('HIW.WHY.POINT_3.NAME'),
+    desc: t('HIW.WHY.POINT_3.DESC'),
     icon: 'person',
   },
 ];
@@ -42,11 +44,12 @@ const points = [
 
           <div class="col-lg-7">
             <h1 class="font-heading mb-4 text-center text-lg-left">
-              42 by Detalytics
+              {{ $t('HIW.HERO.TITLE') }}
             </h1>
-            <h5 class="font-heading-desc mb-5 text-center text-lg-left">
-              Scientifically proven and uniquely personalised, to enhance your work and life performance
-            </h5>
+            <h5
+              v-html="$t('HIW.HERO.DESC')"
+              class="font-heading-desc mb-5 text-center text-lg-left"
+            ></h5>
           </div>
         </div>
       </div>
@@ -56,11 +59,12 @@ const points = [
     <div class="hero-btm">
       <div class="container">
         <h5 class="font-label mb-3 text-center">
-          WHY DETALYTICS
+          {{ $t('HIW.WHY.LABEL') }}
         </h5>
-        <h2 class="font-title mb-5 text-center">
-          What makes <br class="d-md-none">Detalytics different
-        </h2>
+        <h2
+          v-html="$t('HIW.WHY.TITLE')"
+          class="font-title mb-5 text-center"
+        ></h2>
 
         <div class="row justify-content-between gy-5 gx-0 my-3">
           <div

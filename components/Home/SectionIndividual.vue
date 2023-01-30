@@ -1,3 +1,15 @@
+<script setup>
+const { t } = useI18n();
+
+const gifTexts = [
+  t('HOME.INDIVIDUAL.TITLE_GIF_1'),
+  t('HOME.INDIVIDUAL.TITLE_GIF_2'),
+  t('HOME.INDIVIDUAL.TITLE_GIF_3'),
+  t('HOME.INDIVIDUAL.TITLE_GIF_4'),
+  t('HOME.INDIVIDUAL.TITLE_GIF_5'),
+];
+</script>
+
 <template>
   <div id="Individual" class="section-individual">
     <div class="container position-relative">
@@ -11,30 +23,25 @@
         <div class="col-lg-6">
           <div class="pe-xl-5">
             <h5 class="font-label mb-3">
-              FOR INDIVIDUALS
+              {{ $t('HOME.INDIVIDUAL.LABEL') }}
             </h5>
             <h2 class="font-title mb-4">
-              Understand yourself, and activate your potential in
+              {{ $t('HOME.INDIVIDUAL.TITLE') }}
               <span class="d-block">
                 <CompGifText
-                  :text="[
-                    'Peak performance',
-                    'Work safety',
-                    'Shift recovery',
-                    'Learning improvement',
-                    'Healthy and mindful living',
-                  ]"
+                  :text="gifTexts"
                   :pause="2000"
                 />
               </span>
             </h2>
-            <div class="font-desc">
-              <p class="mb-4">With 42, we target all aspects of your lifestyle, mind and body and develop a holistic wellbeing approach to empower your fullest potential in any situation. Define and align your goals  with (app), and discover what (app) can help you achieve with today.</p>
-              <div class="mt-5">
-                <a href="#" class="btn btn-cta" target="_blank" rel="noopener noreferrer">
-                  Download the app
-                </a>
-              </div>
+            <div
+              v-html="$t('HOME.INDIVIDUAL.DESC')"
+              class="font-desc"
+            ></div>
+            <div class="mt-5">
+              <a href="#" class="btn btn-cta" target="_blank" rel="noopener noreferrer">
+                {{ $t('HOME.INDIVIDUAL.CTA') }}
+              </a>
             </div>
           </div>
         </div>
