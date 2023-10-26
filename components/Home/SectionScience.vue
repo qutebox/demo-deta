@@ -1,3 +1,7 @@
+<script setup>
+import { asset } from '@/helpers/utils';
+</script>
+
 <template>
   <div id="Science" class="section-science">
     <div class="container position-relative">
@@ -43,7 +47,7 @@
             :style="{ paddingBottom: '130%' }"
           >
             <img
-              src="/images/home/app-2a.png"
+              :src="asset('/images/home/app-2a.png')"
               alt="Detalytics App"
               width="482"
               height="887"
@@ -58,7 +62,7 @@
               }"
             >
             <img
-              src="/images/home/app-2b.png"
+              :src="asset('/images/home/app-2b.png')"
               alt="Detalytics App"
               width="458"
               height="372"

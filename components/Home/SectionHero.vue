@@ -1,4 +1,9 @@
 <script setup>
+import { ref, computed } from 'vue';
+import { asset } from '@/helpers/utils';
+
+const galleryIndex = ref(0);
+
 const { t } = useI18n();
 
 const gifTexts = [
@@ -6,41 +11,48 @@ const gifTexts = [
   t('HOME.HERO.GIF_TXT_2'),
   t('HOME.HERO.GIF_TXT_3'),
   t('HOME.HERO.GIF_TXT_4'),
-  t('HOME.HERO.GIF_TXT_5'),
-  t('HOME.HERO.GIF_TXT_6'),
-  t('HOME.HERO.GIF_TXT_7'),
-  t('HOME.HERO.GIF_TXT_8'),
+  // t('HOME.HERO.GIF_TXT_5'),
+  // t('HOME.HERO.GIF_TXT_6'),
+  // t('HOME.HERO.GIF_TXT_7'),
+  // t('HOME.HERO.GIF_TXT_8'),
 ];
 
 const gallery = [
   {
-    src: '/images/home/banner-1.jpg',
+    src: asset('/images/home/banner-1.jpg'),
+    alt: 'Detalytics',
+  },
+  {
+    src: asset('/images/home/slider-1.png'),
+    alt: 'Detalytics',
+  },
+  {
+    src: asset('/images/home/slider-2.png'),
     alt: 'Detalytics',
   },
 ];
 
+const currGallery = computed(() => gallery[galleryIndex.value]);
+
 // events
-const onTextChanged = (newText) => {
-  // console.log(newText);
+const onTextChanged = () => {
+  galleryIndex.value = (galleryIndex.value + 1) % gallery.length;
 };
 </script>
 
 <template>
   <div id="Hero" class="section-hero">
     <div class="gallery">
-      <div
-        v-for="(img, index) in gallery"
-        :key="index"
-        class="gallery-item"
-      >
-        <img
-          :src="img.src"
-          :alt="img.alt"
-          :loading="index === 0 ? '' : 'lazy'"
-          width="1728"
-          height="1060"
-        >
-      </div>
+      <Transition name="fade">
+        <div :key="galleryIndex" class="gallery-item">
+          <img
+            :src="currGallery.src"
+            :alt="currGallery.alt"
+            width="1728"
+            height="1060"
+          >
+        </div>
+      </Transition>
     </div>
 
     <div class="lightning d-none d-md-block">
@@ -50,12 +62,13 @@ const onTextChanged = (newText) => {
 
     <div class="container text-center position-relative">
       <h1 class="font-heading mb-3">
-        {{ $t('HOME.HERO.Activate') }}
+        <b>{{ $t('HOME.HERO.Activate') }}</b>
         <span class="d-block d-md-inline-block">
           <CompGifText
             :text="gifTexts"
             :speed="50"
             :clearSpeed="15"
+            :pause="4000"
             @changed="onTextChanged"
           />
         </span>
@@ -71,16 +84,26 @@ const onTextChanged = (newText) => {
 .section-hero{
   position: relative;
   overflow: hidden;
-  min-height: ~"calc(100vh - 6rem)";
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ddd;
   color: #fff;
   padding: 3rem 0;
+  @media (min-width: @screen-lg) {
+    min-height: ~"calc(100vh - 6rem)";
+  }
 }
 
-.font-heading{}
+.font-heading{
+  font-weight: 400;
+  b{
+    font-weight: 700;
+    margin-right: .75rem;
+  }
+}
+
 .font-desc{
   font-size: 1.2rem;
   font-weight: 400;
@@ -115,6 +138,18 @@ const onTextChanged = (newText) => {
     top: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+  }
+}
+
+// transition
+.fade{
+  &-enter-active,
+  &-leave-active{
+    transition: opacity 3s linear;
+  }
+  &-enter-from,
+  &-leave-to{
+    opacity: 0;
   }
 }
 </style>

@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useKeenSlider } from 'keen-slider/vue';
+import { asset } from '@/helpers/utils';
 
 const { t } = useI18n();
 
@@ -11,7 +12,7 @@ const cards = [
     title: t('HOME.ENTERPRISE.CARD_1.TITLE'),
     desc: t('HOME.ENTERPRISE.CARD_1.DESC'),
     cta: t('HOME.ENTERPRISE.CARD_1.CTA'),
-    cover: '/images/home/slider-1.png',
+    cover: asset('/images/home/slider-1.png'),
     cta_link: '/',
     classes: 'slider-item-enterprises',
   },
@@ -20,7 +21,7 @@ const cards = [
     title: t('HOME.ENTERPRISE.CARD_2.TITLE'),
     desc: t('HOME.ENTERPRISE.CARD_2.DESC'),
     cta: t('HOME.ENTERPRISE.CARD_2.CTA'),
-    cover: '/images/home/slider-2.png',
+    cover: asset('/images/home/slider-2.png'),
     cta_link: '/',
     classes: 'slider-item-hospitals',
   },
@@ -29,7 +30,7 @@ const cards = [
     title: t('HOME.ENTERPRISE.CARD_3.TITLE'),
     desc: t('HOME.ENTERPRISE.CARD_3.DESC'),
     cta: t('HOME.ENTERPRISE.CARD_3.CTA'),
-    cover: '/images/home/slider-3.png',
+    cover: asset('/images/home/slider-3.png'),
     cta_link: '/',
     classes: 'slider-item-insurers',
   },
@@ -38,7 +39,7 @@ const cards = [
     title: t('HOME.ENTERPRISE.CARD_4.TITLE'),
     desc: t('HOME.ENTERPRISE.CARD_4.DESC'),
     cta: t('HOME.ENTERPRISE.CARD_4.CTA'),
-    cover: '/images/home/slider-4.png',
+    cover: asset('/images/home/slider-4.png'),
     cta_link: '/',
     classes: 'slider-item-safety',
   },

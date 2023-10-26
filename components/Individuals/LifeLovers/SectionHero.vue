@@ -23,7 +23,6 @@
 .section-hero{
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -32,10 +31,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: ~"calc(100vh - 6rem)";
   padding: 5rem 0;
+  min-height: 75vh;
   @media (min-width: @screen-lg) {
     padding: 7rem 0;
+    min-height: ~"calc(100vh - 6rem)";
   }
 }
 

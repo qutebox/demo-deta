@@ -69,7 +69,7 @@ watch(route, () => {
             </button>
           </li>
 
-          <li>
+          <!-- <li>
             <NuxtLink to="/how-it-works">
               {{ $t('HEADER.NAV.HOW_IT_WORKS') }}
             </NuxtLink>
@@ -122,7 +122,7 @@ watch(route, () => {
                 </NuxtLink>
               </li>
             </ul>
-          </li>
+          </li> -->
           <li>
             <NuxtLink to="/pricing">
               {{ $t('HEADER.NAV.PRICING') }}
@@ -248,7 +248,7 @@ watch(route, () => {
     text-decoration: none;
     color: var(--color-500);
     transition: color .3s;
-    padding: .85rem 1.25rem;
+    padding: .85rem 1rem;
     &:hover{
       color: var(--main-500);
     }

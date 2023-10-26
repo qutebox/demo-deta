@@ -1,3 +1,7 @@
+<script setup>
+import { asset } from '@/helpers/utils';
+</script>
+
 <template>
   <div id="Benefits">
     <!-- benefit-1 -->
@@ -34,7 +38,7 @@
               :style="{ paddingBottom: '100%' }"
             >
               <img
-                src="/images/individuals/benefits-life-lovers-1a.png"
+                :src="asset('/images/individuals/benefits-life-lovers-1a.png')"
                 alt="Benefit 1"
                 class="img"
                 width="406"
@@ -78,7 +82,7 @@
               :style="{ paddingBottom: '100%' }"
             >
               <img
-                src="/images/individuals/benefits-life-lovers-1a.png"
+                :src="asset('/images/individuals/benefits-life-lovers-1a.png')"
                 alt="Benefit 2"
                 class="img"
                 width="406"
@@ -122,7 +126,7 @@
               :style="{ paddingBottom: '100%' }"
             >
               <img
-                src="/images/individuals/benefits-life-lovers-3a.png"
+                :src="asset('/images/individuals/benefits-life-lovers-3a.png')"
                 alt="Benefit 3"
                 class="img"
                 width="417"
@@ -166,7 +170,7 @@
               :style="{ paddingBottom: '110%' }"
             >
               <img
-                src="/images/individuals/benefits-life-lovers-4a.png"
+                :src="asset('/images/individuals/benefits-life-lovers-4a.png')"
                 alt="Benefit 4"
                 class="img"
                 width="608"

@@ -1,3 +1,7 @@
+<script setup>
+import { asset } from '@/helpers/utils';
+</script>
+
 <template>
   <div id="Detalytics" class="section-detalytics">
     <div class="container">
@@ -39,7 +43,7 @@
         <div class="col-lg-6 text-center">
           <v-inview class="img" add-class="__in">
             <img
-              src="/images/home/detalytics-app.png"
+              :src="asset('/images/home/detalytics-app.png')"
               alt="Detalytics App"
               width="695"
               height="725"

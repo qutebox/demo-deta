@@ -1,3 +1,7 @@
+<script setup>
+// import { asset } from '@/helpers/utils';
+</script>
+
 <template>
   <div id="Benefits" class="section-benefits-all">
     <!-- benefit-1 -->

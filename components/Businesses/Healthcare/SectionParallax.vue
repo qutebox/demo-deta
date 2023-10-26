@@ -1,10 +1,14 @@
+<script setup>
+import { asset } from '@/helpers/utils';
+</script>
+
 <template>
   <div id="Description">
     <!-- parallax-1 -->
     <div class="section-parallax parallax-1">
       <div class="parallax-bg">
         <v-parallax-bg
-          src="/images/businesses/slide-7.jpg"
+          :src="asset('/images/businesses/slide-7.jpg')"
           :speed="0.2"
         ></v-parallax-bg>
       </div>
@@ -30,7 +34,7 @@
     <div class="section-parallax parallax-2">
       <div class="parallax-bg">
         <v-parallax-bg
-          src="/images/businesses/slide-8.jpg"
+          :src="asset('/images/businesses/slide-8.jpg')"
           :speed="0.2"
         ></v-parallax-bg>
       </div>

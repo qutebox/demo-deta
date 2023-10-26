@@ -1,4 +1,6 @@
 <script setup>
+import { asset } from '@/helpers/utils';
+
 const { t } = useI18n();
 
 const points = [
@@ -33,7 +35,7 @@ const points = [
           <div class="col-lg-5 mb-4 mb-lg-0">
             <div class="cover">
               <img
-                src="/images/hiw/deta-app.png"
+                :src="asset('/images/hiw/deta-app.png')"
                 alt="Detalytics App"
                 width="1225"
                 height="1018"

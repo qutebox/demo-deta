@@ -1,3 +1,7 @@
+<script setup>
+import { asset } from '@/helpers/utils';
+</script>
+
 <template>
   <div id="IndividualsLifeLovers">
     <BusinessesInsurersSectionHero />
@@ -5,7 +9,7 @@
     <BusinessesInsurersSectionBenefits />
     <LayoutsCtaBg
       class="page-cta"
-      bg="/images/businesses/cta-bg-3.jpg"
+      :bg="asset('/images/businesses/cta-bg-3.jpg')"
     />
   </div>
 </template>

@@ -1,3 +1,7 @@
+<script setup>
+import { asset } from '@/helpers/utils';
+</script>
+
 <template>
   <div id="Lifestyles" class="section-lifestyles">
     <div class="container">
@@ -12,7 +16,13 @@
         class="font-desc text-lg-center"
       ></div>
       <div class="img text-center">
-        <img src="/images/hiw/lifestyles-chart.png" alt="Detalytics lifestyles" width="1205" height="938" loading="lazy">
+        <img
+          :src="asset('/images/hiw/lifestyles-chart.png')"
+          alt="Detalytics lifestyles"
+          width="1205"
+          height="938"
+          loading="lazy"
+        >
       </div>
     </div>
   </div>

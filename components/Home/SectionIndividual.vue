@@ -1,4 +1,6 @@
 <script setup>
+import { asset } from '@/helpers/utils';
+
 const { t } = useI18n();
 
 const gifTexts = [
@@ -54,7 +56,7 @@ const gifTexts = [
             :style="{ paddingBottom: '110%' }"
           >
             <img
-              src="/images/home/app-3b.png"
+              :src="asset('/images/home/app-3b.png')"
               alt="Detalytics"
               width="384"
               height="304"
@@ -69,7 +71,7 @@ const gifTexts = [
               }"
             >
             <img
-              src="/images/home/app-3c.png"
+              :src="asset('/images/home/app-3c.png')"
               alt="Detalytics"
               width="415"
               height="249"
@@ -84,7 +86,7 @@ const gifTexts = [
               }"
             >
             <img
-              src="/images/home/app-3d.png"
+              :src="asset('/images/home/app-3d.png')"
               alt="Detalytics"
               width="372"
               height="311"
@@ -99,7 +101,7 @@ const gifTexts = [
               }"
             >
             <img
-              src="/images/home/app-3a.png"
+              :src="asset('/images/home/app-3a.png')"
               alt="Detalytics App"
               width="438"
               height="798"

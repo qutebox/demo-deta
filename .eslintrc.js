@@ -26,5 +26,7 @@ module.exports = {
   },
   globals: {
     useI18n: 'readonly',
+    useHead: 'readonly',
+    useRuntimeConfig: 'readonly',
   },
 };

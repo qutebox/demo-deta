@@ -1,3 +1,7 @@
+<script setup>
+import { asset } from '@/helpers/utils';
+</script>
+
 <template>
   <div id="Benefits">
     <!-- benefit-1 -->
@@ -35,7 +39,7 @@
               :style="{ paddingBottom: '110%' }"
             >
               <img
-                src="/images/individuals/benefits-work-performance-1a.png"
+                :src="asset('/images/individuals/benefits-work-performance-1a.png')"
                 alt="Benefit 1"
                 class="img"
                 width="413"
@@ -79,7 +83,7 @@
               :style="{ paddingBottom: '110%' }"
             >
               <img
-                src="/images/individuals/benefits-work-performance-2a.png"
+                :src="asset('/images/individuals/benefits-work-performance-2a.png')"
                 alt="Benefit 1"
                 class="img"
                 width="502"
@@ -123,7 +127,7 @@
               :style="{ paddingBottom: '110%' }"
             >
               <img
-                src="/images/individuals/benefits-work-performance-3a.png"
+                :src="asset('/images/individuals/benefits-work-performance-3a.png')"
                 alt="Benefit 1"
                 class="img"
                 width="718"
@@ -167,7 +171,7 @@
               :style="{ paddingBottom: '110%' }"
             >
               <img
-                src="/images/individuals/benefits-work-performance-4a.png"
+                :src="asset('/images/individuals/benefits-work-performance-4a.png')"
                 alt="Benefit 1"
                 class="img"
                 width="718"

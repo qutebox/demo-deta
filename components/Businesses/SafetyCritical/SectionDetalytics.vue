@@ -1,5 +1,6 @@
 <script setup>
 import { useKeenSlider } from 'keen-slider/vue';
+import { asset } from '@/helpers/utils';
 
 // static vars
 const cards = [
@@ -7,19 +8,19 @@ const cards = [
     title: 'Overcome chronic jetlag and optimise readiness level',
     desc: 'Mitigate flight risks of jetlag and irregular schedules, and elevate your aviation personnel’s readiness and functional level.',
     label: 'AVIATION PERSONNEL',
-    cover: '/images/businesses/card-1.png',
+    cover: asset('/images/businesses/card-1.png'),
   },
   {
     title: 'Improved clinical staff resilience and care provision',
     desc: 'Address clinical burnout & staff fatigue through improved readiness of tasks and ability to provide care.',
     label: 'HEALTHCARE PROVIDERS',
-    cover: '/images/businesses/card-2.png',
+    cover: asset('/images/businesses/card-2.png'),
   },
   {
     title: 'Alert, focused and always ready to perform',
     desc: 'Help your workers stay focused and alert, to reduce dangers and perform in high risk industries.',
     label: 'LAW ENFORCEMENT',
-    cover: '/images/businesses/card-3.png',
+    cover: asset('/images/businesses/card-3.png'),
   },
 ];
 

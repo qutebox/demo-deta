@@ -1,31 +1,33 @@
 <script setup>
+import { asset } from '@/helpers/utils';
+
 const { t } = useI18n();
 
 const cards = [
   {
     title: t('HOME.USECASES.CASE_1_TITLE'),
     desc: t('HOME.USECASES.CASE_1_DESC'),
-    img: '/images/home/card-1.png',
+    img: asset('/images/home/card-1.png'),
   },
   {
     title: t('HOME.USECASES.CASE_2_TITLE'),
     desc: t('HOME.USECASES.CASE_2_DESC'),
-    img: '/images/home/card-2.png',
+    img: asset('/images/home/card-2.png'),
   },
   {
     title: t('HOME.USECASES.CASE_3_TITLE'),
     desc: t('HOME.USECASES.CASE_3_DESC'),
-    img: '/images/home/card-3.png',
+    img: asset('/images/home/card-3.png'),
   },
   {
     title: t('HOME.USECASES.CASE_4_TITLE'),
     desc: t('HOME.USECASES.CASE_4_DESC'),
-    img: '/images/home/card-4.png',
+    img: asset('/images/home/card-4.png'),
   },
   {
     title: t('HOME.USECASES.CASE_5_TITLE'),
     desc: t('HOME.USECASES.CASE_5_DESC'),
-    img: '/images/home/card-5.png',
+    img: asset('/images/home/card-5.png'),
   },
 ];
 </script>

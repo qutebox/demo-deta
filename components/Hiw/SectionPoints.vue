@@ -1,3 +1,7 @@
+<script setup>
+import { asset } from '@/helpers/utils';
+</script>
+
 <template>
   <div id="Points" class="section-points">
     <!-- point-1 -->
@@ -21,7 +25,13 @@
 
           <div class="col-lg-5">
             <v-inview class="cover" add-class="__in">
-              <img src="/images/hiw/point-1.png" alt="Leading expert" width="592" height="628" loading="lazy">
+              <img
+                :src="asset('/images/hiw/point-1.png')"
+                alt="Leading expert"
+                width="592"
+                height="628"
+                loading="lazy"
+              >
             </v-inview>
           </div>
         </div>
@@ -49,7 +59,13 @@
 
           <div class="col-lg-5 position-relative order-lg-first">
             <v-inview class="cover" add-class="__in">
-              <img src="/images/hiw/point-2.png" alt="Context driven" width="592" height="628" loading="lazy">
+              <img
+                :src="asset('/images/hiw/point-2.png')"
+                alt="Context driven"
+                width="592"
+                height="628"
+                loading="lazy"
+              >
             </v-inview>
           </div>
         </div>

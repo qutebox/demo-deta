@@ -43,7 +43,7 @@
     }
   },
   "FOOTER_CTA": {
-    "TITLE": "Find out how Detalytics can help activate your best potential",
+    "TITLE": "Your journey to FULL FITNESS starts with the first step",
     "CTA": {
       "DOWNLOAD": "Download the app",
       "DEMO": "Get a demo"
@@ -52,16 +52,13 @@
   "HOME": {
     "HERO": {
       "Activate": "Activate",
-      "GIF_TXT_1": "feeling your best in work and life",
-      "GIF_TXT_2": "a rejuvenated mind and body",
-      "GIF_TXT_3": "the satisfaction of peak performance",
-      "GIF_TXT_3": "the joy of travel",
-      "GIF_TXT_4": "the potential to always perform your best",
-      "GIF_TXT_5": "the ease of a balanced/optimised lifestyle",
-      "GIF_TXT_6": "a healthy body and mind",
-      "GIF_TXT_7": "the enjoyment of optimised learning",
-      "GIF_TXT_8": "your love for life",
-      "DESC": "With Detalytics, activate your best potential in work and life."
+      "GIF_TXT_1": "Sustainable Peak Performance",
+      "GIF_TXT_2": "Mental Sharpness",
+      "GIF_TXT_3": "Your Mental Fitness",
+      "GIF_TXT_4": "Your Love For Life",
+      "DESC": "Through science. By design. On your own terms.",
+      "DESC_1": "Through science. By design.",
+      "DESC_2": "On your own terms."
     },
     "ABOUT": {
       "TITLE": "With (app), activate your best at work and life everyday, in every situation",
@@ -149,6 +146,63 @@
         "DESC": "Mitigate workplace risks and improve workplace safety, through shifting risk-management from a reactive model to proactive model.",
         "CTA": "AVIATION"
       }
+    },
+    "V2": {
+      "HERO": {
+        "Activate": "ACTIVATE",
+        "GIF_TXT_1": "Sustainable Peak Performance",
+        "GIF_TXT_2": "Mental Sharpness",
+        "GIF_TXT_3": "Your Mental Fitness",
+        "GIF_TXT_4": "Your Love For Life",
+        "DESC": "Through science. By design. On your own terms.",
+        "DESC_1": "Through science. By design.",
+        "DESC_2": "On your own terms."
+      },
+      "ABOUT": {
+        "TITLE": "42 by Detalytics helps activate the best version of you when it matters most",
+        "BODY": "<p>Everyone has different aspirations in life or work performance goals.  The question is <i>which version of you</i> you would rather be when that moment arrives?</p><p>You can only achieve your goal or aspiration, get more out of your life or work and fully experience it with the best and healthiest version of you.</p><p>We help you activate that version of you.</p><p>We call it <b>FULL FITNESS</b></p>",
+        "CTA": "Find out more"
+      },
+      "FULL_FITNESS": {
+        "TITLE": "FULL FITNESS",
+        "DESC": "because anything else is sub-optimal",
+        "CTA": "Our Solution"
+      },
+      "CASES": {
+        "TITLE": "Different responsibilities. Different impacts.",
+        "DESC": "The goal is the same, to reach optimal readiness when it matters most",
+        "CTA": "Meet Your Full Fitness Coach",
+        "CASE_1": {
+          "SUBTITLE": "Full Fitness for",
+          "TITLE": "CLINICAL TEAMS",
+          "DESC": "Every day you operate in the domains that save lives.  Your patients depend on you to be operational ready when your shift starts. Let 42 show you your current and projected fatigue levels, the contributing factors and your recommendation to recover and be ready when it matters",
+          "CTA": "Learn More"
+        },
+        "CASE_2": {
+          "SUBTITLE": "Full Fitness for",
+          "TITLE": "PILOTS",
+          "DESC": "Your passengers and crew count on you to be mission-ready and fly them safely to the destinations. You need to be sharp and ready before the mission to deal with and overcome any unexpected events that will test your experience, skills and decision-making ability.  Let 42 help you to reach Full Fitness and be mission-ready.",
+          "CTA": "Learn More"
+        },
+        "CASE_3": {
+          "SUBTITLE": "Full Fitness for",
+          "TITLE": "CORPORATE LEADERSHIP",
+          "DESC": "The future of the company is under your stewardship. You want to excel and thrive, yet you wonder if you can repeat peak performance without getting burnt out. Let 42 help you unleash your full potential in a repeatable and sustainable way.",
+          "CTA": "Learn More"
+        },
+        "CASE_4": {
+          "SUBTITLE": "Full Fitness for",
+          "TITLE": "TRAVEL WELLBEING",
+          "DESC": "You have planned for the dream vacation for quite some time, every last detail taken care of so that you will have the experience of a lifetime.  The last thing you want is to be overcome with jet lag fatigue when you arrive and wish that you have another holiday to make up for this holiday. Let 42 help you reduce your jet lag impacts, at a pace that suits you.",
+          "CTA": "Learn More"
+        },
+        "CASE_5": {
+          "SUBTITLE": "Full Fitness for",
+          "TITLE": "JOY OF LIFE",
+          "DESC": "Lifespan without healthspan means unnecessary financial and emotional burdens to your loved ones.  Let 42 detect early signs of health risks you otherwise would have missed, take charge of your wellbeing and navigate with you each day to experience the joy of living.",
+          "CTA": "Learn More"
+        }
+      }
     }
   },
   "HIW": {
@@ -217,5 +271,14 @@
         "DESC_2": "<p>Change can be daunting, we get it. With (app), getting started is easy. We guide you step-by-step, through actionable recommendations to help you accumulate sustainable atomic habits that improve your quality of life.</p><ul class='w-500'><li>Lifestyle behaviours optimisation based on sleep, activities and diet</li><li>Understand how changing your lifestyle behaviours enhances your selected goals - in burnout prevention, learning improvement etc</li></ul>"
       }
     }
+  },
+  "PRICING": {
+    "hero_title": "Activate your <span class='d-block d-md-inline'>FULL FITNESS</span> today",
+    "hero_desc": "Choose a plan that’s right for you",
+    "month": "Month",
+    "year": "Year",
+    "pay_monthly": "Pay monthly",
+    "pay_annually": "Pay annually",
+    "buy_now": "Buy Now"
   }
 }

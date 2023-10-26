@@ -1,4 +1,14 @@
 export default defineNuxtConfig({
+  runtimeConfig: {
+    app: {
+      baseURL: '/',
+      cdnURL: process.env.CDN_URL,
+    },
+    public: {
+      version: '0.1.3',
+      cartUrl: process.env.CART_PAGE_URL,
+    },
+  },
   pages: true,
   app: {
     head: {
@@ -18,7 +28,7 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&display=swap' },
       ],
     },
   },

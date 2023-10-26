@@ -1,3 +1,7 @@
+<script setup>
+import { asset } from '@/helpers/utils';
+</script>
+
 <template>
   <div id="About" class="section-about">
     <div class="container position-relative">
@@ -31,7 +35,7 @@
             add-class="__in"
           >
             <img
-              src="/images/home/pic-2.png"
+              :src="asset('/images/home/pic-2.png')"
               alt="Detalytics"
               width="398"
               height="315"
@@ -46,7 +50,7 @@
               }"
             >
             <img
-              src="/images/home/pic-1.png"
+              :src="asset('/images/home/pic-1.png')"
               alt="Detalytics"
               width="429"
               height="258"
@@ -61,7 +65,7 @@
               }"
             >
             <img
-              src="/images/home/pic-3.png"
+              :src="asset('/images/home/pic-3.png')"
               alt="Detalytics"
               width="385"
               height="322"

@@ -1,3 +1,7 @@
+<script setup>
+import { asset } from '@/helpers/utils';
+</script>
+
 <template>
   <div id="HowItWork">
     <!-- step-1 -->
@@ -44,7 +48,7 @@
               :style="{ paddingBottom: '120%' }"
             >
               <img
-                src="/images/hiw/step-1a.png"
+                :src="asset('/images/hiw/step-1a.png')"
                 alt="Step 1"
                 width="450"
                 height="823"
@@ -100,7 +104,7 @@
               :style="{ paddingBottom: '110%' }"
             >
               <img
-                src="/images/hiw/step-2a.png"
+                :src="asset('/images/hiw/step-2a.png')"
                 alt="Step 2"
                 width="388"
                 height="696"
@@ -116,7 +120,7 @@
                 }"
               >
               <img
-                src="/images/hiw/step-2b.png"
+                :src="asset('/images/hiw/step-2b.png')"
                 alt="Step 2"
                 width="397"
                 height="715"
@@ -163,7 +167,7 @@
               :style="{ paddingBottom: '100%' }"
             >
               <img
-                src="/images/hiw/step-2d.png"
+                :src="asset('/images/hiw/step-2d.png')"
                 alt="Step 2"
                 width="380"
                 height="607"
@@ -178,7 +182,7 @@
                 }"
               >
               <img
-                src="/images/hiw/step-2c.png"
+                :src="asset('/images/hiw/step-2c.png')"
                 alt="Step 2"
                 width="494"
                 height="659"
@@ -234,7 +238,7 @@
               :style="{ paddingBottom: '100%' }"
             >
               <img
-                src="/images/hiw/step-3a.png"
+                :src="asset('/images/hiw/step-3a.png')"
                 alt="Step 3"
                 width="410"
                 height="655"
@@ -249,7 +253,7 @@
                 }"
               >
               <img
-                src="/images/hiw/step-3b.png"
+                :src="asset('/images/hiw/step-3b.png')"
                 alt="Step 3"
                 width="533"
                 height="710"
@@ -295,7 +299,7 @@
               :style="{ paddingBottom: '100%' }"
             >
               <img
-                src="/images/hiw/step-3c.png"
+                :src="asset('/images/hiw/step-3c.png')"
                 alt="Step 3"
                 width="512"
                 height="833"

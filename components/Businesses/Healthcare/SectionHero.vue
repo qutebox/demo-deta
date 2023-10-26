@@ -27,15 +27,15 @@
 .section-hero{
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   background-color: #EBF6FF;
   background-image: linear-gradient(355.74deg, #EBF6FF 0%, #85C0FE 100%);
-  min-height: ~"calc(100vh - 6rem)";
   padding: 5rem 0;
+  min-height: 75vh;
   @media (min-width: @screen-lg) {
     padding: 7rem 0;
+    min-height: ~"calc(100vh - 6rem)";
   }
 }
 
