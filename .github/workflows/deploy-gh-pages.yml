@@ -1,0 +1,45 @@
+name: CD Staging
+
+on:
+  push:
+    branches: [dev]
+  pull_request:
+    branches: [dev]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "npm"
+
+      - name: Install node modules
+        run: npm install
+
+      - name: Run a one-line script
+        run: |
+          echo Hello, world!
+          echo github ref: ${{ github.ref }}
+          echo cache-npm hit: ${{ steps.cache-npm.outputs.cache-hit }}
+          aws --version
+
+      - name: Generate
+        run: npm run generate
+        env:
+          GOOGLE_ANALYTICS_ID: ${{ secrets.xxx }}
+          CART_PAGE_URL: https://stage-subscription.detalytics.com
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        # If you're changing the branch from main,
+        # also change the `main` in `refs/heads/main`
+        # below accordingly.
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./.output/public
