@@ -1,9 +1,7 @@
 <template>
   <div id="Cta" class="section-cta">
     <div class="container text-center">
-      <h2 class="font-title my-5 pb-lg-3">
-        {{ $t('FOOTER_CTA.TITLE') }}
-      </h2>
+      <h2 class="font-title my-5 pb-lg-3" v-html="$t('FOOTER_CTA.TITLE')" />
 
       <div class="actions">
         <a href="#" class="btn btn-download my-2 my-lg-0 mx-sm-2 mx-lg-3" target="_blank" rel="noopener noreferrer">

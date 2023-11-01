@@ -1,5 +1,7 @@
 <template>
   <div id="About">
-    <h1 class="text-center">WIP</h1>
+    <AboutSectionHero />
+    <AboutSectionHowItWorks />
+    <LayoutsCta />
   </div>
 </template>

@@ -81,6 +81,7 @@ onUnmounted(() => {
     class="section-hero"
     :style="{
       '--color': currSlide.color,
+      backgroundColor: currSlide.color === '#fff' ? '#000' : '#ddd',
     }"
   >
     <Transition :name="slideAni">
@@ -89,6 +90,7 @@ onUnmounted(() => {
         class="gallery-item"
         :style="{
           '--color': currSlide.color,
+          backgroundColor: currSlide.color === '#fff' ? '#000' : '#ddd',
         }"
       >
         <div class="gallery-item-bg">
@@ -174,6 +176,7 @@ onUnmounted(() => {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  transition: background .3s;
   &-bg{
     position: absolute;
     top: 0;

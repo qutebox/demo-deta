@@ -4,18 +4,18 @@
       <div class="row g-3 g-lg-5">
         <!-- column#links -->
         <div class="col-6 col-lg-3 order-lg-last">
-          <div class="mb-4 pb-2">
+          <!-- <div class="mb-4 pb-2">
             <NuxtLink to="/how-it-works/" class="link-1">
               {{ $t('FOOTER.NAV.WHY') }}
             </NuxtLink>
-          </div>
+          </div> -->
           <div class="mb-4 pb-2">
             <NuxtLink to="/pricing/" class="link-1">
               {{ $t('FOOTER.NAV.PRICING') }}
             </NuxtLink>
           </div>
           <div class="mb-4 pb-2">
-            <NuxtLink to="/" class="link-1">
+            <NuxtLink to="/about" class="link-1">
               {{ $t('FOOTER.NAV.ABOUT') }}
             </NuxtLink>
           </div>
@@ -23,7 +23,7 @@
 
         <!-- column#text -->
         <div class="col-6 col-lg-3">
-          <div class="label">
+          <!-- <div class="label">
             {{ $t('FOOTER.BUSINESS.TITLE') }}
           </div>
           <div class="txt">
@@ -74,7 +74,7 @@
                 </NuxtLink>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
 
         <!-- column#contact -->

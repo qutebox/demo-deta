@@ -43,7 +43,7 @@
     }
   },
   "FOOTER_CTA": {
-    "TITLE": "Your journey to FULL FITNESS starts with the first step",
+    "TITLE": "Your journey to FULL FITNESS starts <br class='d-none d-lg-block'>with the first step",
     "CTA": {
       "DOWNLOAD": "Download the app",
       "DEMO": "Get a demo"
