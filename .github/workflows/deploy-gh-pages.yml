@@ -50,6 +50,7 @@ jobs:
       - name: Generate
         run: npm run generate
         env:
+          NUXT_APP_BASE_URL: /demo-deta/
           GOOGLE_ANALYTICS_ID: ${{ secrets.xxx }}
           CART_PAGE_URL: https://stage-subscription.detalytics.com
 
